@@ -1,0 +1,11 @@
+CREATE OR REPLACE FUNCTION public.guard_transfer_registration_owner() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$
+BEGIN
+ IF EXISTS(SELECT 1 FROM public.intercollege_transfer_requests WHERE case_id=NEW.id) THEN
+ IF NOT EXISTS(SELECT 1 FROM public.service_units WHERE id=NEW.service_unit_id AND code='REG') THEN RAISE EXCEPTION 'Transfer cases must remain with Admission & Registration'; END IF;
+ IF NEW.assigned_to IS DISTINCT FROM OLD.assigned_to AND NEW.assigned_to IS NOT NULL AND NOT EXISTS(SELECT 1 FROM public.service_staff ss JOIN public.staff_profiles s ON s.user_id=ss.staff_profile_id WHERE ss.service_unit_id=NEW.service_unit_id AND s.user_id=NEW.assigned_to AND ss.is_active AND ss.can_receive_cases AND s.is_active AND NOT public.is_access_revoked(s.user_id)) THEN RAISE EXCEPTION 'An active Registration staff member is required';END IF;
+ END IF;RETURN NEW;END $$;
+CREATE TRIGGER transfer_registration_owner BEFORE UPDATE OF service_unit_id,assigned_to ON public.cases FOR EACH ROW EXECUTE FUNCTION public.guard_transfer_registration_owner();
+CREATE OR REPLACE FUNCTION public.guard_transfer_rule_record_class() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ BEGIN IF OLD.is_demo_record IS DISTINCT FROM NEW.is_demo_record THEN RAISE EXCEPTION 'Demo and university rules cannot overwrite one another';END IF;RETURN NEW;END $$;
+CREATE TRIGGER transfer_rule_record_class BEFORE UPDATE ON public.transfer_programme_rules FOR EACH ROW EXECUTE FUNCTION public.guard_transfer_rule_record_class();
+CREATE OR REPLACE FUNCTION public.guard_transfer_capacity_totals() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ BEGIN IF NEW.reserved_transfer_seats<0 OR NEW.assigned_transfer_seats<0 OR NEW.total_transfer_seats<NEW.reserved_transfer_seats+NEW.assigned_transfer_seats THEN RAISE EXCEPTION 'Transfer seat counts exceed verified capacity';END IF;RETURN NEW;END $$;
+CREATE TRIGGER transfer_capacity_totals BEFORE INSERT OR UPDATE ON public.programme_transfer_capacity FOR EACH ROW EXECUTE FUNCTION public.guard_transfer_capacity_totals();

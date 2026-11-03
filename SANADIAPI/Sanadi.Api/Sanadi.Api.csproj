@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Sanadi.Api.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.0" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.31.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="AI\Assets\silero_vad_v5.onnx" LogicalName="Sanadi.Voice.silero_vad_v5.onnx" />
+    <None Update="AI\Assets\VAD-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sanadi.Application\Sanadi.Application.csproj" />
+    <ProjectReference Include="..\Sanadi.Infrastructure\Sanadi.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sanadi.Domain\Sanadi.Domain.csproj" />
+  </ItemGroup>
+
+  <!-- Native SkiaSharp symbol files are not required at runtime and can make
+       constrained publish targets fail while copying every RID's PDB. Keep
+       the native libraries themselves in the publish output. -->
+  <Target Name="ExcludeSkiaSharpNativeSymbolsFromPublish" AfterTargets="ComputeFilesToPublish">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+                             Condition="$([System.String]::Copy('%(ResolvedFileToPublish.Identity)').ToLowerInvariant().EndsWith('libskiasharp.pdb'))" />
+    </ItemGroup>
+  </Target>
+
+</Project>

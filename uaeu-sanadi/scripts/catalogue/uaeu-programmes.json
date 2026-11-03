@@ -1,0 +1,1300 @@
+{
+  "programmes": [
+    {
+      "programme_id": "2887.2968.23014",
+      "title": "Bachelor of Science in Computer Science",
+      "overview": "Computer science (CS) is the fundamental scientific and practical approach to computation and its applications. A computer scientist concentrates on the theory of computation and the design of computational systems. The program objectives aim at producing graduates who are prepared for careers in CS profession and be able to receive an advanced degree in CS related areas. The graduates are prepared to work for industry or government agencies, or are in private practice, be able to demonstrate competence and are successfully contributing to the UAE computer science and information technology workforce. (1 Credit Hour “CH” is equivalent to 2 ECTS Credit Hours “European Credit Transfer and Accumulation System”).",
+      "objectives": [
+        "Demonstrate the highest standards of technical professionalism and ethical practice.",
+        "Engage in lifelong learning and professional development via post-graduate education and participation in professional organizations.",
+        "Attain successful careers and leadership positions in computing-based organizations.",
+        "Drive scientific and societal advancements through technological innovation and entrepreneurship."
+      ],
+      "outcomes": [
+        "Analyze a complex computing problem and to apply principles of computing and other relevant disciplines to identify solutions.",
+        "Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.",
+        "Communicate effectively in a variety of professional contexts.",
+        "Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.",
+        "Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline.",
+        "Apply computer science theory and software development fundamentals to produce computing-based solutions."
+      ],
+      "total_credits": 120,
+      "credit_categories": [
+        {
+          "name": "General Education (Req. CH: 21)",
+          "courses": [
+            {
+              "code": "GEEM110",
+              "title": "Contemporary Emirati Studies",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "General Education (Req. CH: 21)",
+          "courses": [
+            {
+              "code": "GEAE101",
+              "title": "Academic English for Humanities and STEM",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "General Education (Req. CH: 21)",
+          "courses": [
+            {
+              "code": "ITBP218",
+              "title": "Entrepreneurship and New Venture Creation in IT",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "General Education (Req. CH: 21)",
+          "courses": [
+            {
+              "code": "GESU121",
+              "title": "Sustainability",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "MATH120",
+              "title": "Contemporary Applications of Math",
+              "credits": 3
+            },
+            {
+              "code": "STAT101",
+              "title": "Statistics in the Modern World",
+              "credits": 3
+            },
+            {
+              "code": "ECON110",
+              "title": "Principles of Economics",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "GEZD110",
+              "title": "Zayed’s Legacy of Tolerance and Coexistence",
+              "credits": 3
+            },
+            {
+              "code": "GEIS100",
+              "title": "Islamic Culture",
+              "credits": 3
+            },
+            {
+              "code": "GEIS101",
+              "title": "Biography of the Prophet \"Sira\"",
+              "credits": 3
+            },
+            {
+              "code": "HSR120",
+              "title": "Introduction to Heritage & Culture",
+              "credits": 3
+            },
+            {
+              "code": "HSR130",
+              "title": "Introduction to Language & Communication",
+              "credits": 3
+            },
+            {
+              "code": "MSC200",
+              "title": "Introduction to Mass Media",
+              "credits": 3
+            },
+            {
+              "code": "PHI101",
+              "title": "Introduction to Philosophy",
+              "credits": 3
+            },
+            {
+              "code": "TRS200",
+              "title": "Introduction to Translation",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "AGRB210",
+              "title": "Introduction to Agribusiness",
+              "credits": 3
+            },
+            {
+              "code": "CURR103",
+              "title": "Early Childhood Development & Learning",
+              "credits": 3
+            },
+            {
+              "code": "GEO200",
+              "title": "World Regional Geography",
+              "credits": 3
+            },
+            {
+              "code": "HSR140",
+              "title": "Introduction to Society & Behavior",
+              "credits": 3
+            },
+            {
+              "code": "HSR150",
+              "title": "Introduction to Government Policy & Urban Structures",
+              "credits": 3
+            },
+            {
+              "code": "PHI226",
+              "title": "Human Rights Theory",
+              "credits": 3
+            },
+            {
+              "code": "PSYC100",
+              "title": "Introduction to Psychology",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "PHYS100",
+              "title": "Astronomy",
+              "credits": 3
+            },
+            {
+              "code": "MEED103",
+              "title": "Molecular Basis of Life",
+              "credits": 3
+            },
+            {
+              "code": "ARAG205",
+              "title": "Introduction to Fish and Animal Science",
+              "credits": 3
+            },
+            {
+              "code": "ARAG220",
+              "title": "Natural Resources",
+              "credits": 3
+            },
+            {
+              "code": "CHEM181",
+              "title": "Chemistry in the Modern World",
+              "credits": 3
+            },
+            {
+              "code": "GEOL110",
+              "title": "Planet Earth",
+              "credits": 3
+            },
+            {
+              "code": "PHYS101",
+              "title": "Conceptual Physics",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "FDSC250",
+              "title": "Contemporary Food Science & Nutrition",
+              "credits": 3
+            },
+            {
+              "code": "GEHP111",
+              "title": "Happiness and Wellbeing",
+              "credits": 3
+            },
+            {
+              "code": "NUTR100",
+              "title": "Nutrition and Well-being",
+              "credits": 3
+            },
+            {
+              "code": "PHED201",
+              "title": "Physical Fitness and Wellness",
+              "credits": 3
+            },
+            {
+              "code": "PHED211",
+              "title": "Health and Movement",
+              "credits": 3
+            },
+            {
+              "code": "SLP101",
+              "title": "Language Development and Impairment",
+              "credits": 3
+            },
+            {
+              "code": "SPED101",
+              "title": "Education of Exceptional Children",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "Students shall register 9 CH from the 6 following themes \n(a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+          "courses": [
+            {
+              "code": "CHIN101",
+              "title": "Chinese 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "FCH101",
+              "title": "French 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "GER101",
+              "title": "German 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "KOR101",
+              "title": "Korean 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "SPN101",
+              "title": "Spanish 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "CHIN102",
+              "title": "Chinese 2 for Beginners 1",
+              "credits": 3
+            },
+            {
+              "code": "FCH102",
+              "title": "French 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "KOR102",
+              "title": "Korean 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "GER102",
+              "title": "German 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "SPN102",
+              "title": "Spanish 2 for Beginners",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": 9
+        },
+        {
+          "name": "College Requirements (Req. CH: 41)",
+          "courses": [
+            {
+              "code": "CSBP219",
+              "title": "Object Oriented Programming",
+              "credits": 3
+            },
+            {
+              "code": "CSBP119",
+              "title": "Algorithms and Problem Solving",
+              "credits": 3
+            },
+            {
+              "code": "MATH105",
+              "title": "Calculus I",
+              "credits": 3
+            },
+            {
+              "code": "PHYS105",
+              "title": "General Physics I",
+              "credits": 3
+            },
+            {
+              "code": "CENG202",
+              "title": "Discrete Mathematics",
+              "credits": 3
+            },
+            {
+              "code": "CENG205",
+              "title": "Digital Design & Computer Organization",
+              "credits": 3
+            },
+            {
+              "code": "CSBP319",
+              "title": "Data Structures",
+              "credits": 3
+            },
+            {
+              "code": "CSBP315",
+              "title": "Operating Systems Fundamentals",
+              "credits": 3
+            },
+            {
+              "code": "MATH110",
+              "title": "Calculus II",
+              "credits": 3
+            },
+            {
+              "code": "STAT210",
+              "title": "Probability and Statistics",
+              "credits": 3
+            },
+            {
+              "code": "BIOC100",
+              "title": "Basic Biology I",
+              "credits": 3
+            },
+            {
+              "code": "CHEM111",
+              "title": "General Chemistry I",
+              "credits": 3
+            },
+            {
+              "code": "ITBP270",
+              "title": "Professional Responsibility in Information Technology",
+              "credits": 2
+            },
+            {
+              "code": "ITBP480",
+              "title": "Senior Graduation Project I",
+              "credits": 3
+            },
+            {
+              "code": "ITBP481",
+              "title": "Senior Graduation Project II",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "Major Requirements (Req. CH: 38)",
+          "courses": [
+            {
+              "code": "CENG210",
+              "title": "Communication & Networks Fundamentals",
+              "credits": 3
+            },
+            {
+              "code": "ITBP301",
+              "title": "Security Principles & Practice",
+              "credits": 3
+            },
+            {
+              "code": "CSBP316",
+              "title": "Human Computer Interaction",
+              "credits": 3
+            },
+            {
+              "code": "ITBP321",
+              "title": "Web Application Development Lab",
+              "credits": 1
+            },
+            {
+              "code": "CSBP340",
+              "title": "Database Systems",
+              "credits": 3
+            },
+            {
+              "code": "CSBP301",
+              "title": "Artificial Intelligence",
+              "credits": 3
+            },
+            {
+              "code": "CSBP400",
+              "title": "Modeling & Simulation",
+              "credits": 3
+            },
+            {
+              "code": "CSBP411",
+              "title": "Machine Learning",
+              "credits": 3
+            },
+            {
+              "code": "MATH140",
+              "title": "Linear Algebra I",
+              "credits": 3
+            },
+            {
+              "code": "CSBP421",
+              "title": "Smart Computer Graphics",
+              "credits": 3
+            },
+            {
+              "code": "CSBP461",
+              "title": "Internet Computing",
+              "credits": 3
+            },
+            {
+              "code": "PHYS135",
+              "title": "General Physics Lab I",
+              "credits": 1
+            },
+            {
+              "code": "SWEB450",
+              "title": "Analysis of Algorithms",
+              "credits": 3
+            },
+            {
+              "code": "SWEB300",
+              "title": "Software Engineering Fundamentals",
+              "credits": 3
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "Internship ((Req. CH: 6)",
+          "courses": [
+            {
+              "code": "ITBP496",
+              "title": "Internship",
+              "credits": 6
+            }
+          ],
+          "mandatory": true,
+          "required_credits": null
+        },
+        {
+          "name": "Major Electives (Req. CH: 12)",
+          "courses": [
+            {
+              "code": "CSBP320",
+              "title": "Data Mining",
+              "credits": 3
+            },
+            {
+              "code": "CSBP431",
+              "title": "Bioinformatics",
+              "credits": 3
+            },
+            {
+              "code": "CSBP476",
+              "title": "Robotics and Intelligent Systems",
+              "credits": 3
+            },
+            {
+              "code": "CSBP483",
+              "title": "Mobile Web Content and Development",
+              "credits": 3
+            },
+            {
+              "code": "CSBP487",
+              "title": "Computer Animation and Visualization",
+              "credits": 3
+            },
+            {
+              "code": "CSBP491",
+              "title": "Computational Intelligence for Data Management",
+              "credits": 3
+            },
+            {
+              "code": "CSBP499",
+              "title": "Special Topics in Computer Science",
+              "credits": 3
+            },
+            {
+              "code": "SWEB451",
+              "title": "Game Development",
+              "credits": 3
+            },
+            {
+              "code": "CSBP441",
+              "title": "Applied Computer Vision",
+              "credits": 3
+            },
+            {
+              "code": "CSBP477",
+              "title": "Natural Language Processing",
+              "credits": 3
+            }
+          ],
+          "mandatory": false,
+          "required_credits": null
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uaeu.ac.ae/en/catalog/program-details.shtml?PROGRAM_ID=2887.2968.23014",
+          "authority": "UAEU official catalogue programme ID; dynamically populated sections blank in supplied gateway result"
+        },
+        {
+          "url": "https://www.uaeu.ac.ae/en/catalog/undergraduate/programs/bachelor-of-science-in-computer-science.shtml",
+          "authority": "UAEU official catalogue programme page; populated programme detail and requirements"
+        }
+      ],
+      "notes": [
+        "Either CHEM111 or BIOC100; not both compulsory.",
+        "Internship in last semester; no concurrent courses.",
+        "General education elective themes: 9 credits; maximum 3 per theme except paired 6-credit language.",
+        "Free elective: 2 credits."
+      ]
+    },
+    {
+      "programme_id": "2890.2902.22715",
+      "title": "Bachelor of Science in Biology",
+      "overview": "[Apply Now](https://uaeu.elluciancrmrecruit.com/Apply/Account/Login)  ### Overview  The program in Biology is designed to provide students with a strong foundation in biological sciences, after which they can major in one of two concentrations: cellular and molecular biology, or ecology and organismal biology. Students get good background in chemistry. The Department of Biology emphasizes early students' involvement in the learning environment, to ensure solid foundation of their theoretical and practical skills. Students are exposed to diverse methods of biological analyses in the two major areas. The program aims at graduating students who are prepared for the demands of professional life, intellectually competent and technically skillful, so they can participate in finding solutions to current major challenges of everyday life.(1 Credit Hour “CH” is equivalent to 2 ECTS Credit Hours “European Credit Transfer and Accumulation System”).",
+      "objectives": [
+        "Develop proficiency of basic concepts in cellular and molecular biology, ecology and environmental sciences, and general biology.",
+        "Foster teamwork and improve oral and communication skills.",
+        "Foster a student-oriented research program that results in professional publications.",
+        "Embrace student-oriented teaching methods that nurture critical thinking abilities and apply their knowledge to solve theoretical and empirical real-life problems.",
+        "Prepare students for future job market and careers."
+      ],
+      "outcomes": [
+        "Assess up-to-date knowledge relating to principles, theories, and models of biological systems.",
+        "Evaluate practical, empirical, and theoretical problems in biology.",
+        "Analyze and communicate scientific information effectively and professionally.",
+        "Conduct safe and ethical biological lab and/or field experiments and interpret results.",
+        "Compare opinions on present and future global scientific challenges in line with the UAE national interests and job market.",
+        "Work effectively both independently and in a team."
+      ],
+      "total_credits": 120,
+      "credit_categories": [
+        {
+          "name": "General Education (Req. Ch: 21)",
+          "required_credits": 21,
+          "mandatory": true,
+          "courses": []
+        },
+        {
+          "name": "Theme 1: UAE National Identity",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "GEEM110",
+              "title": "Contemporary Emirati Studies",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 2: Academic Language Proficiency",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "GEAE101",
+              "title": "Academic English for Humanities and STEM",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 3: Innovation",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "GEIT113",
+              "title": "Introduction to Artificial Intelligence",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 4: Entrepreneurship",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "GEIE222",
+              "title": "Fundamentals of Innovation and Entrepreneurship",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 5: Sustainability",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "GESU121",
+              "title": "Sustainability",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 6: Quantitative Reasoning and Critical Thinking",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "PHI180",
+              "title": "Critical Thinking",
+              "credits": 3
+            },
+            {
+              "code": "ECON110",
+              "title": "Principles of Economics",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 7: Humanities",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "GEZD110",
+              "title": "Zayed’s Legacy of Tolerance and Coexistence",
+              "credits": 3
+            },
+            {
+              "code": "GEIS100",
+              "title": "Islamic Culture",
+              "credits": 3
+            },
+            {
+              "code": "GEIS101",
+              "title": "Biography of the Prophet \"Sira\"",
+              "credits": 3
+            },
+            {
+              "code": "HSR120",
+              "title": "Introduction to Heritage & Culture",
+              "credits": 3
+            },
+            {
+              "code": "HSR130",
+              "title": "Introduction to Language & Communication",
+              "credits": 3
+            },
+            {
+              "code": "MSC200",
+              "title": "Introduction to Mass Media",
+              "credits": 3
+            },
+            {
+              "code": "PHI101",
+              "title": "Introduction to Philosophy",
+              "credits": 3
+            },
+            {
+              "code": "TRS200",
+              "title": "Introduction to Translation",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 8: Behavioral and Social Sciences",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "GEBS280",
+              "title": "Future Workforce Skills",
+              "credits": 3
+            },
+            {
+              "code": "AGRB210",
+              "title": "Introduction to Agribusiness",
+              "credits": 3
+            },
+            {
+              "code": "CURR103",
+              "title": "Early Childhood Development & Learning",
+              "credits": 3
+            },
+            {
+              "code": "FOED102",
+              "title": "Professional Ethics in Education",
+              "credits": 3
+            },
+            {
+              "code": "GEO200",
+              "title": "World Regional Geography",
+              "credits": 3
+            },
+            {
+              "code": "HSR140",
+              "title": "Introduction to Society & Behavior",
+              "credits": 3
+            },
+            {
+              "code": "HSR150",
+              "title": "Introduction to Government Policy & Urban Structures",
+              "credits": 3
+            },
+            {
+              "code": "PHI226",
+              "title": "Human Rights Theory",
+              "credits": 3
+            },
+            {
+              "code": "PHIL120",
+              "title": "Principles of Professional Ethics",
+              "credits": 3
+            },
+            {
+              "code": "PSYC100",
+              "title": "Introduction to Psychology",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 9: Natural Sciences",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "ARAG205",
+              "title": "Introduction to Fish and Animal Science",
+              "credits": 3
+            },
+            {
+              "code": "ARAG220",
+              "title": "Natural Resources",
+              "credits": 3
+            },
+            {
+              "code": "PHYS100",
+              "title": "Astronomy",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 10: Health and Wellness",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "FDSC250",
+              "title": "Contemporary Food Science & Nutrition",
+              "credits": 3
+            },
+            {
+              "code": "GEHP111",
+              "title": "Happiness and Wellbeing",
+              "credits": 3
+            },
+            {
+              "code": "NUTR100",
+              "title": "Nutrition and Well-being",
+              "credits": 3
+            },
+            {
+              "code": "PHED201",
+              "title": "Physical Fitness and Wellness",
+              "credits": 3
+            },
+            {
+              "code": "PHED211",
+              "title": "Health and Movement",
+              "credits": 3
+            },
+            {
+              "code": "SLP101",
+              "title": "Language Development and Impairment",
+              "credits": 3
+            },
+            {
+              "code": "SPED101",
+              "title": "Education of Exceptional Children",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Theme 11: Cultural Diversity (Registering in any of these courses (CHIN101, FCH101, KOR101, GER101, SPN101) should be followed by registering in the relevant complementary course (CHIN102, FCH102, GER102, KOR102, SPN102, respectively))",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "CHIN101",
+              "title": "Chinese 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "FCH101",
+              "title": "French 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "GER101",
+              "title": "German 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "KOR101",
+              "title": "Korean 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "SPN101",
+              "title": "Spanish 1 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "CHIN102",
+              "title": "Chinese 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "FCH102",
+              "title": "French 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "GER102",
+              "title": "German 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "KOR102",
+              "title": "Korean 2 for Beginners",
+              "credits": 3
+            },
+            {
+              "code": "SPN102",
+              "title": "Spanish 2 for Beginners",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Required Courses",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "BIOC100",
+              "title": "Basic Biology I",
+              "credits": 3
+            },
+            {
+              "code": "BIOC155",
+              "title": "Biology Laboratory 1",
+              "credits": 1
+            },
+            {
+              "code": "BIOC160",
+              "title": "Biology II",
+              "credits": 4
+            },
+            {
+              "code": "BIOC165",
+              "title": "Biology Laboratory 2",
+              "credits": 1
+            },
+            {
+              "code": "BIOC250",
+              "title": "Basic Ecology",
+              "credits": 3
+            },
+            {
+              "code": "BIOC270",
+              "title": "General Genetics",
+              "credits": 3
+            },
+            {
+              "code": "BIOC275",
+              "title": "Genetics Laboratory",
+              "credits": 1
+            },
+            {
+              "code": "BIOC290",
+              "title": "Cell and Molecular Biology",
+              "credits": 3
+            },
+            {
+              "code": "BIOC490",
+              "title": "Advanced Bio-applications",
+              "credits": 2
+            },
+            {
+              "code": "BIOC480",
+              "title": "Research Project",
+              "credits": 3
+            },
+            {
+              "code": "BIOC280",
+              "title": "Computing and Data Analysis for Biology",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Required Course",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "BIOC500",
+              "title": "Internship",
+              "credits": 6
+            }
+          ]
+        },
+        {
+          "name": "Required Courses",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "CHEM111",
+              "title": "General Chemistry I",
+              "credits": 3
+            },
+            {
+              "code": "CHEM113",
+              "title": "General Chemistry II",
+              "credits": 3
+            },
+            {
+              "code": "CHEM115",
+              "title": "General Chemistry Lab",
+              "credits": 1
+            },
+            {
+              "code": "CHEM241",
+              "title": "Organic Chemistry I",
+              "credits": 3
+            },
+            {
+              "code": "CHEM245",
+              "title": "Organic Chemistry Lab I",
+              "credits": 1
+            },
+            {
+              "code": "MATH105",
+              "title": "Calculus I",
+              "credits": 3
+            },
+            {
+              "code": "MATH110",
+              "title": "Calculus II",
+              "credits": 3
+            },
+            {
+              "code": "STAT235",
+              "title": "Statistics for Biology",
+              "credits": 3
+            },
+            {
+              "code": "GEOL100",
+              "title": "Physical Geology",
+              "credits": 3
+            },
+            {
+              "code": "PHYS105",
+              "title": "General Physics I",
+              "credits": 3
+            },
+            {
+              "code": "PHYS135",
+              "title": "General Physics Lab I",
+              "credits": 1
+            },
+            {
+              "code": "PHYS110",
+              "title": "General Physics II",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Ecology and Organismal Biology Concentration (Req. Ch: 27)",
+          "required_credits": 27,
+          "mandatory": false,
+          "courses": []
+        },
+        {
+          "name": "Required Course",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "BIOE250",
+              "title": "Biodiversity and Evolution",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Elective Courses (EOB) (Req. CH: 24) (A student must take 24 credits to fulfill the requirements for graduation. A minimum of 12 credits must be taken as specified from the list below. The other 12 credits can be taken from the same list or from courses in the CMB concentration.) ( Level-2 Courses: (Student must take at least 3 CH from this level)",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "BIOE212",
+              "title": "Biology of Invertebrates",
+              "credits": 3
+            },
+            {
+              "code": "BIOE214",
+              "title": "Biology of Vertebrates",
+              "credits": 3
+            },
+            {
+              "code": "BIOE230",
+              "title": "Microbiology",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Level-3 Courses: (Student must take at least 6 CH from this level)",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "BIOE310",
+              "title": "Insect Diversity, Ecology, and Systematics",
+              "credits": 3
+            },
+            {
+              "code": "BIOE320",
+              "title": "Population and Community Ecology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE330",
+              "title": "Diversity and Biology of Fungi",
+              "credits": 3
+            },
+            {
+              "code": "BIOE332",
+              "title": "Biology of Parasites",
+              "credits": 3
+            },
+            {
+              "code": "BIOE340",
+              "title": "Biology and Diversity of Mammals",
+              "credits": 3
+            },
+            {
+              "code": "BIOE350",
+              "title": "Plant Anatomy and Physiology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE355",
+              "title": "Animal Anatomy and Physiology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE360",
+              "title": "Principles of Oceanography",
+              "credits": 3
+            },
+            {
+              "code": "BIOE370",
+              "title": "Botany",
+              "credits": 3
+            },
+            {
+              "code": "BIOE380",
+              "title": "Desert Ecology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE391",
+              "title": "Field Ecology",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Level-4 Courses: (Student must take at least 6 CH from this level)",
+          "required_credits": null,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "BIOE435",
+              "title": "Bacteriology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE436",
+              "title": "Molecular Ecology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE450",
+              "title": "Biology and Diversity of Birds",
+              "credits": 3
+            },
+            {
+              "code": "BIOE454",
+              "title": "Marine Biology",
+              "credits": 3
+            },
+            {
+              "code": "BIOE457",
+              "title": "Animal Behavior",
+              "credits": 3
+            },
+            {
+              "code": "BIOE459",
+              "title": "Conservation Biology",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Cellular and Molecular Biology Concentration (Req. Ch: 27)",
+          "required_credits": 27,
+          "mandatory": false,
+          "courses": []
+        },
+        {
+          "name": "Required Course",
+          "required_credits": null,
+          "mandatory": true,
+          "courses": [
+            {
+              "code": "BIOM335",
+              "title": "Molecular Biology of Genes",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Elective Courses (CMB) (Req. Ch: 12- 24) (A student must take 24 credits to fulfill the requirements for graduation. A minimum of 12 credits must be taken from the list below. The other 12 credits can be taken from the same list or from courses in the EOB concentration.)",
+          "required_credits": 12,
+          "mandatory": false,
+          "courses": [
+            {
+              "code": "BIOM339",
+              "title": "Virology",
+              "credits": 2
+            },
+            {
+              "code": "BIOM350",
+              "title": "Developmental Biology",
+              "credits": 3
+            },
+            {
+              "code": "BIOM310",
+              "title": "Introduction to Neurosciences",
+              "credits": 3
+            },
+            {
+              "code": "BIOM370",
+              "title": "Introductory Bioinformatics",
+              "credits": 3
+            },
+            {
+              "code": "BIOM380",
+              "title": "Genomics",
+              "credits": 3
+            },
+            {
+              "code": "BIOM390",
+              "title": "Introduction to Epigenetics",
+              "credits": 2
+            },
+            {
+              "code": "BIOM420",
+              "title": "Molecular Basis of Cell and Tissue Development",
+              "credits": 3
+            },
+            {
+              "code": "BIOM430",
+              "title": "Cellular Biochemistry",
+              "credits": 3
+            },
+            {
+              "code": "BIOM433",
+              "title": "Biotechnology & Genetic Engineering",
+              "credits": 3
+            },
+            {
+              "code": "BIOM461",
+              "title": "Tissue Culture",
+              "credits": 3
+            },
+            {
+              "code": "BIOM462",
+              "title": "Immunology",
+              "credits": 3
+            },
+            {
+              "code": "BIOM470",
+              "title": "Molecular Physiology",
+              "credits": 3
+            },
+            {
+              "code": "BIOM481",
+              "title": "Molecular Evolution",
+              "credits": 3
+            },
+            {
+              "code": "BIOM489",
+              "title": "Molecular Biology Techniques",
+              "credits": 1
+            },
+            {
+              "code": "BIOM490",
+              "title": "Biology of Diseases",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "name": "Free Elective (Req. Ch: 9)",
+          "required_credits": 9,
+          "mandatory": false,
+          "courses": []
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uaeu.ac.ae/en/catalog/program-details.shtml?PROGRAM_ID=2890.2902.22715",
+          "authority": "UAEU official programme catalogue; supplied rendered catalogue transcription"
+        }
+      ],
+      "notes": [
+        "Choose ONE 27-credit concentration: Ecology and Organismal Biology OR Cellular and Molecular Biology.",
+        "Each concentration has one 3-credit required course and 24 elective credits. At least 12 elective credits from the chosen concentration; the other 12 can be from either concentration.",
+        "Ecology concentration electives require at least 3 credits at level 2, 6 at level 3 and 6 at level 4.",
+        "General education elective themes: 6 credits; maximum 3 per theme except paired 6-credit language.",
+        "Free electives: 9 credits."
+      ]
+    }
+  ]
+}

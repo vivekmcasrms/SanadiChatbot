@@ -1,0 +1,13 @@
+import { apiFetch } from "@/lib/auth-token";
+import type { ServiceAvailability } from "@/lib/services/availability-types";
+export type AvailabilityWindow={id:string;service_id:string;availability_type:string;opens_at:string|null;closes_at:string|null;status:string;label:string|null;reason_en:string|null;reason_ar:string|null;student_message_en:string|null;student_message_ar:string|null;reminders_enabled:boolean;preliminary_check_allowed:boolean;student_visible:boolean;academic_term_id:string|null;updated_at:string};
+export type AvailabilityBoardRow={service:{id:string;code:string;name_en:string;name_ar:string;category:string|null;is_active:boolean;service_unit_id:string|null};availability:ServiceAvailability;windows:AvailabilityWindow[]};
+export type WindowInput={id?:string|null;serviceId:string;availabilityType:"always_available"|"date_range"|"term_based"|"multiple_windows"|"temporarily_closed"|"admin_disabled";opensAt?:string|null;closesAt?:string|null;academicTermId?:string|null;label?:string|null;reasonEn?:string|null;reasonAr?:string|null;studentMessageEn?:string|null;studentMessageAr?:string|null;remindersEnabled?:boolean;preliminaryCheckAllowed?:boolean;studentVisible?:boolean;status?:"active"|"archived"};
+export const getServiceAvailabilityFn=({data}:{data:{code:string}})=>apiFetch<ServiceAvailability>(`/api/service-availability/service/${encodeURIComponent(data.code)}`);
+export const getServiceAvailabilityBoard=()=>apiFetch<AvailabilityBoardRow[]>("/api/service-availability/board");
+export const getMyServiceReminders=()=>apiFetch<unknown[]>("/api/service-availability/reminders");
+export const requestServiceReminder=({data}:{data:{code:string;reminderType:"service_open"|"day_before_open"}})=>apiFetch<{id:string;scheduledFor:string;alreadyExisted:boolean;availability:ServiceAvailability}>("/api/service-availability/reminders",{method:"POST",body:JSON.stringify({code:data.code,reminderType:data.reminderType})});
+export const cancelServiceReminder=({data}:{data:{reminderId:string}})=>apiFetch<{ok:boolean}>(`/api/service-availability/reminders/${encodeURIComponent(data.reminderId)}`,{method:"DELETE"});
+export const saveServiceAvailabilityWindow=({data}:{data:WindowInput})=>apiFetch<{id:string}>("/api/service-availability/windows",{method:"PUT",body:JSON.stringify(data)});
+export const deleteServiceAvailabilityWindow=({data}:{data:{id:string}})=>apiFetch<{ok:boolean}>(`/api/service-availability/windows/${encodeURIComponent(data.id)}`,{method:"DELETE"});
+export const getServiceAvailabilityAudit=({data}:{data:{serviceId?:string|null}})=>apiFetch<unknown[]>(`/api/service-availability/audit${data.serviceId?`?serviceId=${encodeURIComponent(data.serviceId)}`:""}`);

@@ -1,0 +1,45 @@
+# Sanadi — local deployment.
+#
+# Database engine: PostgreSQL 17 + pgvector (SAME engine as the hosted app).
+# Sanadi also needs Supabase Auth (GoTrue), Storage and PostgREST. Those are
+# started with the Supabase CLI, which runs the exact same images the hosted
+# project uses:
+#
+#   supabase start          # Postgres 17 + Auth + Storage + REST on 54321/54322
+#   docker compose up app   # this file: the Sanadi application on :8080
+#
+# The `db` service below is OPTIONAL and only for running Postgres alone
+# (schema inspection, restore rehearsals, CI). Do not run both `db` and
+# `supabase start` against the same port.
+
+services:
+  app:
+    build: .
+    env_file: .env
+    environment:
+      # Inside Docker, the Supabase CLI stack on the host is reachable here:
+      VITE_SUPABASE_URL: ${VITE_SUPABASE_URL:-http://host.docker.internal:54321}
+      SUPABASE_URL: ${SUPABASE_URL:-http://host.docker.internal:54321}
+      PUBLIC_APP_URL: ${PUBLIC_APP_URL:-http://localhost:8080}
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+
+  # Optional standalone Postgres (only if you are NOT using `supabase start`).
+  db:
+    profiles: ["db-only"]
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "54322:5432"
+    volumes:
+      - sanadi-db:/var/lib/postgresql/data
+
+volumes:
+  sanadi-db:

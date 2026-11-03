@@ -1,0 +1,893 @@
+[
+  {
+    "email": "alreem_alameri@uaeu.ac.ae",
+    "fullName": "AL REEM AL AMERI",
+    "groups": [
+      "S&C- Financial Affairs Division"
+    ],
+    "units": [
+      "FEES"
+    ]
+  },
+  {
+    "email": "a.fadelmola@uaeu.ac.ae",
+    "fullName": "Abdalla FadelMola",
+    "groups": [
+      "General Services"
+    ],
+    "units": [
+      "GENERAL_SERVICES"
+    ]
+  },
+  {
+    "email": "a_alkaabi@uaeu.ac.ae",
+    "fullName": "AbdulAziz AlKaabi",
+    "groups": [
+      "HR Services"
+    ],
+    "units": [
+      "HR_SERVICES"
+    ]
+  },
+  {
+    "email": "abdulla.alshiba@uaeu.ac.ae",
+    "fullName": "Abdulla AlShiba",
+    "groups": [
+      "HR Services"
+    ],
+    "units": [
+      "HR_SERVICES"
+    ]
+  },
+  {
+    "email": "abdullah.k@uaeu.ac.ae",
+    "fullName": "Abdullah Al Kendi",
+    "groups": [
+      "S&C - Student Happiness Center",
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "afra.k@uaeu.ac.ae",
+    "fullName": "Afra Al Farsi",
+    "groups": [
+      "Alumni Affairs Department",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "ahmad.saadi@uaeu.ac.ae",
+    "fullName": "Ahmed Al Saadi",
+    "groups": [
+      "HR Services"
+    ],
+    "units": [
+      "HR_SERVICES"
+    ]
+  },
+  {
+    "email": "aliaateeq@uaeu.ac.ae",
+    "fullName": "Alia Al Dhaheri",
+    "groups": [
+      "S&C - Student Activities Department"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "alia.s@uaeu.ac.ae",
+    "fullName": "Alia Mohammed Bin Awad Al Nuaimi",
+    "groups": [
+      "HD",
+      "Service desk"
+    ],
+    "units": [
+      "HD",
+      "ITS"
+    ]
+  },
+  {
+    "email": "alia.alkaabi@uaeu.ac.ae",
+    "fullName": "Alia Saeed Alkaabi",
+    "groups": [
+      "Libraries Deanship",
+      "S&C - UAEU Labraries"
+    ],
+    "units": [
+      "LIB"
+    ]
+  },
+  {
+    "email": "amal_m@uaeu.ac.ae",
+    "fullName": "Amal Awad Al Nuaimi",
+    "groups": [
+      "S&C - Admission Department"
+    ],
+    "units": [
+      "REG"
+    ]
+  },
+  {
+    "email": "amira.hamad@uaeu.ac.ae",
+    "fullName": "Ameera Al Ghaithi",
+    "groups": [
+      "S&C - IT college"
+    ],
+    "units": [
+      "IT_COLLEGE"
+    ]
+  },
+  {
+    "email": "amna.s@uaeu.ac.ae",
+    "fullName": "Amna Al Dhaheri",
+    "groups": [
+      "Alumni Affairs Department"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "a.alremeithi@uaeu.ac.ae",
+    "fullName": "Amna AlRemeithi",
+    "groups": [
+      "S&C - General Services Department"
+    ],
+    "units": [
+      "GENERAL_SERVICES_DEPAR"
+    ]
+  },
+  {
+    "email": "asharafka@uaeu.ac.ae",
+    "fullName": "Asharaf Kannearil Abdul Rahiman",
+    "groups": [
+      "UOD - Marketing"
+    ],
+    "units": [
+      "UOD_MARKETING"
+    ]
+  },
+  {
+    "email": "asma_alkatheeri@uaeu.ac.ae",
+    "fullName": "Asma Abdulla Bin Mahri Alkatheeri",
+    "groups": [
+      "S&C - UAEU Labraries"
+    ],
+    "units": [
+      "LIB"
+    ]
+  },
+  {
+    "email": "asma.s@uaeu.ac.ae",
+    "fullName": "Asma AlEissaee",
+    "groups": [
+      "FMD"
+    ],
+    "units": [
+      "FMD"
+    ]
+  },
+  {
+    "email": "ayshas@uaeu.ac.ae",
+    "fullName": "Aysha Al Hassani",
+    "groups": [
+      "S&C - HR"
+    ],
+    "units": [
+      "HR"
+    ]
+  },
+  {
+    "email": "alkaabi.a@uaeu.ac.ae",
+    "fullName": "Aysha Alkaabi",
+    "groups": [
+      "S&C- Registration Department"
+    ],
+    "units": [
+      "REG"
+    ]
+  },
+  {
+    "email": "badriyam@uaeu.ac.ae",
+    "fullName": "Badriya AlMaawali",
+    "groups": [
+      "S&C - HR"
+    ],
+    "units": [
+      "HR"
+    ]
+  },
+  {
+    "email": "d_almaamari@uaeu.ac.ae",
+    "fullName": "Dalal Al Maamari",
+    "groups": [
+      "Alumni Affairs Department"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "e.alshamisi@uaeu.ac.ae",
+    "fullName": "Eiman Shamisi",
+    "groups": [
+      "S&C - Provost office"
+    ],
+    "units": [
+      "PROVOST_OFFICE"
+    ]
+  },
+  {
+    "email": "f.alnaqbi@uaeu.ac.ae",
+    "fullName": "Fahad Al Naqbi",
+    "groups": [
+      "FMD"
+    ],
+    "units": [
+      "FMD"
+    ]
+  },
+  {
+    "email": "f.alhajeri@uaeu.ac.ae",
+    "fullName": "Fatheya ALHAJERI",
+    "groups": [
+      "Center for Career Placement & Alumni"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "f.aldarmaki@uaeu.ac.ae",
+    "fullName": "Fatima Al Darmaki",
+    "groups": [
+      "Provost"
+    ],
+    "units": [
+      "PROVOST"
+    ]
+  },
+  {
+    "email": "fatima.m@uaeu.ac.ae",
+    "fullName": "Fatima Al Dhaheri",
+    "groups": [
+      "S&C - Student Services Department"
+    ],
+    "units": [
+      "SAS"
+    ]
+  },
+  {
+    "email": "fatima@uaeu.ac.ae",
+    "fullName": "Fatima Al Kaabi",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "fatima.aldhaheri@uaeu.ac.ae",
+    "fullName": "Fatima Alyabhouni Aldhaheri",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "gahbabi@uaeu.ac.ae",
+    "fullName": "Ghalia Alahbabi",
+    "groups": [
+      "UOD"
+    ],
+    "units": [
+      "UOD"
+    ]
+  },
+  {
+    "email": "haleima.a@uaeu.ac.ae",
+    "fullName": "Haleimah Aldhanhani",
+    "groups": [
+      "S&C - Housing Department"
+    ],
+    "units": [
+      "HOUSING"
+    ]
+  },
+  {
+    "email": "h.alneyadi@uaeu.ac.ae",
+    "fullName": "Halima Al Neyadi",
+    "groups": [
+      "College of Science COS",
+      "S&C- College Of Science"
+    ],
+    "units": [
+      "COLLEGE_OF_SCIENCE_COS",
+      "COLLEGE_OF_SCIENCE"
+    ]
+  },
+  {
+    "email": "h.alraeesi@uaeu.ac.ae",
+    "fullName": "Hamad AlRaeesi",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "halneyadi@uaeu.ac.ae",
+    "fullName": "Hamda Al Neyadi",
+    "groups": [
+      "S&C- DVCRA - Research Office"
+    ],
+    "units": [
+      "DVCRA_RESEARCH_OFFICE"
+    ]
+  },
+  {
+    "email": "hanan.s@uaeu.ac.ae",
+    "fullName": "Hanan Alsaeedi",
+    "groups": [
+      "General Supervision Office"
+    ],
+    "units": [
+      "GENERAL_SUPERVISION_OF"
+    ]
+  },
+  {
+    "email": "latifa.alkaabi@uaeu.ac.ae",
+    "fullName": "Latifa Juma Saleh Al Kaabi",
+    "groups": [
+      "S&C-College of Law"
+    ],
+    "units": [
+      "COLLEGE_OF_LAW"
+    ]
+  },
+  {
+    "email": "maitha.a@uaeu.ac.ae",
+    "fullName": "Maitha Al Dhaheri",
+    "groups": [
+      "HD",
+      "Service desk"
+    ],
+    "units": [
+      "HD",
+      "ITS"
+    ]
+  },
+  {
+    "email": "maitha_a@uaeu.ac.ae",
+    "fullName": "Maitha AlAmeri",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - General Services Department",
+      "S&C - Housing Department",
+      "S&C - HR",
+      "S&C - IT college",
+      "S&C - SG",
+      "S&C - Student Activities Department",
+      "S&C - Student Happiness Center",
+      "S&C - Student Services Department",
+      "S&C - UAEU Labraries",
+      "S&C - University College",
+      "S&C - VC Office",
+      "S&C- Financial Affairs Division",
+      "S&C- Registration Department",
+      "S&C- UOD - University Outreach Department",
+      "S&C-Centre for Career Placement & Alumni",
+      "S&C-College of Law",
+      "Service desk"
+    ],
+    "units": [
+      "REG",
+      "GENERAL_SERVICES_DEPAR",
+      "HOUSING",
+      "HR",
+      "IT_COLLEGE",
+      "SG",
+      "HAPPY",
+      "SAS",
+      "LIB",
+      "UNIVERSITY_COLLEGE",
+      "VC_OFFICE",
+      "FEES",
+      "UOD_UNIVERSITY_OUTREAC",
+      "CAREER",
+      "COLLEGE_OF_LAW",
+      "ITS"
+    ]
+  },
+  {
+    "email": "ma_aldhaheri@uaeu.ac.ae",
+    "fullName": "Maitha AlDhaheri",
+    "groups": [
+      "National Fellow Group",
+      "National Fellow Recruitment Group"
+    ],
+    "units": [
+      "NATIONAL_FELLOW_GROUP",
+      "NATIONAL_FELLOW_RECRUI"
+    ]
+  },
+  {
+    "email": "manal.radwan@uaeu.ac.ae",
+    "fullName": "Manal Radwan Meshref",
+    "groups": [
+      "S&C - Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "meera.alneyadi@uaeu.ac.ae",
+    "fullName": "Meera Alneyadi",
+    "groups": [
+      "S&C- UOD - University Outreach Department",
+      "UOD",
+      "UOD - IC",
+      "UOD - LS",
+      "UOD - Marketing",
+      "UOD - MC",
+      "UOD - Multaqa"
+    ],
+    "units": [
+      "UOD_UNIVERSITY_OUTREAC",
+      "UOD",
+      "UOD_IC",
+      "UOD_LS",
+      "UOD_MARKETING",
+      "UOD_MC",
+      "UOD_MULTAQA"
+    ]
+  },
+  {
+    "email": "mohammed_abdulla@uaeu.ac.ae",
+    "fullName": "Mohammed Al Nuaimi",
+    "groups": [
+      "National Fellow Group",
+      "National Fellow Recruitment Group"
+    ],
+    "units": [
+      "NATIONAL_FELLOW_GROUP",
+      "NATIONAL_FELLOW_RECRUI"
+    ]
+  },
+  {
+    "email": "mona.m@uaeu.ac.ae",
+    "fullName": "Mona Al Hassani",
+    "groups": [
+      "Alumni Affairs Department",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "m.aldhaheri@uaeu.ac.ae",
+    "fullName": "Mouza Al Dhaheri",
+    "groups": [
+      "Provost"
+    ],
+    "units": [
+      "PROVOST"
+    ]
+  },
+  {
+    "email": "mouza.aldhaheri@uaeu.ac.ae",
+    "fullName": "Mouza AlDhaheri",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - Housing Department",
+      "S&C - HR",
+      "S&C - IT college",
+      "S&C - Student Happiness Center",
+      "S&C - Student Services Department",
+      "S&C - VC Office",
+      "S&C- UOD - University Outreach Department",
+      "S&C-Centre for Career Placement & Alumni",
+      "Service desk"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "HOUSING",
+      "HR",
+      "IT_COLLEGE",
+      "HAPPY",
+      "SAS",
+      "VC_OFFICE",
+      "UOD_UNIVERSITY_OUTREAC",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "m.almazrouei@uaeu.ac.ae",
+    "fullName": "Muna AlMazrouei",
+    "groups": [
+      "S&C - IT college"
+    ],
+    "units": [
+      "IT_COLLEGE"
+    ]
+  },
+  {
+    "email": "noura.a@uaeu.ac.ae",
+    "fullName": "Noura Al Kaabi",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "noura.n@uaeu.ac.ae",
+    "fullName": "Noura Al Nuaimi",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Housing Department",
+      "S&C - Provost office",
+      "S&C - Student Happiness Center",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "HOUSING",
+      "PROVOST_OFFICE",
+      "HAPPY",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "noura.s@uaeu.ac.ae",
+    "fullName": "Noura Alshamisi",
+    "groups": [
+      "DVCSE",
+      "S&C - DVCSAE Office"
+    ],
+    "units": [
+      "DVCSE",
+      "DVCSAE_OFFICE"
+    ]
+  },
+  {
+    "email": "rolifmdhs@uaeu.ac.ae",
+    "fullName": "Roli Esimaje",
+    "groups": [
+      "FMD"
+    ],
+    "units": [
+      "FMD"
+    ]
+  },
+  {
+    "email": "saeeda_h@uaeu.ac.ae",
+    "fullName": "Saeeda AlAhbabi",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Provost office",
+      "S&C - Student Happiness Center",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "PROVOST_OFFICE",
+      "HAPPY",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "s_alhassani@uaeu.ac.ae",
+    "fullName": "Salama AlHassani",
+    "groups": [
+      "National Fellow Group",
+      "National Fellow Recruitment Group"
+    ],
+    "units": [
+      "NATIONAL_FELLOW_GROUP",
+      "NATIONAL_FELLOW_RECRUI"
+    ]
+  },
+  {
+    "email": "salwa.alameri@uaeu.ac.ae",
+    "fullName": "Salwa AlAmeri",
+    "groups": [
+      "Procurement"
+    ],
+    "units": [
+      "PROCUREMENT"
+    ]
+  },
+  {
+    "email": "saud@uaeu.ac.ae",
+    "fullName": "Saoud Al Ameri",
+    "groups": [
+      "National Fellow Group",
+      "National Fellow Recruitment Group"
+    ],
+    "units": [
+      "NATIONAL_FELLOW_GROUP",
+      "NATIONAL_FELLOW_RECRUI"
+    ]
+  },
+  {
+    "email": "s.zubaidi@uaeu.ac.ae",
+    "fullName": "Sara Al Zubaidi",
+    "groups": [
+      "CES Unit",
+      "HD",
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Facilities Management Department",
+      "S&C - Provost office",
+      "S&C - Student Happiness Center",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "CES_UNIT",
+      "HD",
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "FACILITIES_MANAGEMENT_",
+      "PROVOST_OFFICE",
+      "HAPPY",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "saraalrashdi@uaeu.ac.ae",
+    "fullName": "Sara Alrashdi",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "shaikha.alketbi@uaeu.ac.ae",
+    "fullName": "Shaikha AlKetbi",
+    "groups": [
+      "S&C- College Of Science"
+    ],
+    "units": [
+      "COLLEGE_OF_SCIENCE"
+    ]
+  },
+  {
+    "email": "shamma.alkalbani@uaeu.ac.ae",
+    "fullName": "Shama Alkalbani",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Facilities Management Department",
+      "S&C - Provost office",
+      "S&C - Student Happiness Center",
+      "S&C - UAEU Labraries",
+      "S&C- College Of Science",
+      "S&C- DVCRA - Research Office"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "FACILITIES_MANAGEMENT_",
+      "PROVOST_OFFICE",
+      "HAPPY",
+      "LIB",
+      "COLLEGE_OF_SCIENCE",
+      "DVCRA_RESEARCH_OFFICE"
+    ]
+  },
+  {
+    "email": "s.al-muhairi@uaeu.ac.ae",
+    "fullName": "Shamma Al Muhairi",
+    "groups": [
+      "Chancellor Office"
+    ],
+    "units": [
+      "CHANCELLOR_OFFICE"
+    ]
+  },
+  {
+    "email": "shamsaj@uaeu.ac.ae",
+    "fullName": "Shamsa Albaloushi",
+    "groups": [
+      "Center for Career Placement & Alumni"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "sharefa.ibrahim@uaeu.ac.ae",
+    "fullName": "Sharefa Hasan",
+    "groups": [
+      "Alumni Affairs Department"
+    ],
+    "units": [
+      "CAREER"
+    ]
+  },
+  {
+    "email": "sherinbaby@uaeu.ac.ae",
+    "fullName": "Sherin Baby",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  },
+  {
+    "email": "shouq.alharsoosi@uaeu.ac.ae",
+    "fullName": "Shouq Alharsoosi",
+    "groups": [
+      "CES Unit",
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Facilities Management Department",
+      "S&C - Provost office",
+      "S&C - Student Happiness Center",
+      "S&C - UAEU Labraries",
+      "S&C - University College",
+      "S&C- College Of Science",
+      "S&C- DVCRA - Research Office",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "CES_UNIT",
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "FACILITIES_MANAGEMENT_",
+      "PROVOST_OFFICE",
+      "HAPPY",
+      "LIB",
+      "UNIVERSITY_COLLEGE",
+      "COLLEGE_OF_SCIENCE",
+      "DVCRA_RESEARCH_OFFICE",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "tahr@uaeu.ac.ae",
+    "fullName": "Teaching assisstant HR",
+    "groups": [
+      "National Fellow Group",
+      "National Fellow Recruitment Group"
+    ],
+    "units": [
+      "NATIONAL_FELLOW_GROUP",
+      "NATIONAL_FELLOW_RECRUI"
+    ]
+  },
+  {
+    "email": "thurya.a@uaeu.ac.ae",
+    "fullName": "Thurya Alameri",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Facilities Management Department",
+      "S&C - General Services Department",
+      "S&C - Provost office",
+      "S&C - SG",
+      "S&C - Student Activities Department",
+      "S&C - Student Happiness Center",
+      "S&C - Student Services Department",
+      "S&C - UAEU Labraries",
+      "S&C - University College",
+      "S&C- College Of Science",
+      "S&C- DVCRA - Research Office",
+      "S&C-Centre for Career Placement & Alumni"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "FACILITIES_MANAGEMENT_",
+      "GENERAL_SERVICES_DEPAR",
+      "PROVOST_OFFICE",
+      "SG",
+      "HAPPY",
+      "SAS",
+      "LIB",
+      "UNIVERSITY_COLLEGE",
+      "COLLEGE_OF_SCIENCE",
+      "DVCRA_RESEARCH_OFFICE",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "yasmeena@uaeu.ac.ae",
+    "fullName": "Yasmeena Al Badi",
+    "groups": [
+      "S&C - Admission Department",
+      "S&C - DoIT",
+      "S&C - DVCSAE Office",
+      "S&C - Facilities Management Department",
+      "S&C - General Services Department",
+      "S&C - Housing Department",
+      "S&C - Provost office",
+      "S&C - SG",
+      "S&C - Student Activities Department",
+      "S&C - Student Happiness Center",
+      "S&C - Student Services Department",
+      "S&C - UAEU Labraries",
+      "S&C - VC Office",
+      "S&C- College Of Science",
+      "S&C- DVCRA - Research Office",
+      "S&C- Registration Department",
+      "S&C- UOD - University Outreach Department",
+      "S&C-Centre for Career Placement & Alumni",
+      "Service desk"
+    ],
+    "units": [
+      "REG",
+      "ITS",
+      "DVCSAE_OFFICE",
+      "FACILITIES_MANAGEMENT_",
+      "GENERAL_SERVICES_DEPAR",
+      "HOUSING",
+      "PROVOST_OFFICE",
+      "SG",
+      "HAPPY",
+      "SAS",
+      "LIB",
+      "VC_OFFICE",
+      "COLLEGE_OF_SCIENCE",
+      "DVCRA_RESEARCH_OFFICE",
+      "UOD_UNIVERSITY_OUTREAC",
+      "CAREER"
+    ]
+  },
+  {
+    "email": "yousef.h@uaeu.ac.ae",
+    "fullName": "Yousef Alhashmi",
+    "groups": [
+      "FMD"
+    ],
+    "units": [
+      "FMD"
+    ]
+  },
+  {
+    "email": "zsaif@uaeu.ac.ae",
+    "fullName": "Zainab Saeed",
+    "groups": [
+      "Student Happiness Center"
+    ],
+    "units": [
+      "HAPPY"
+    ]
+  }
+]

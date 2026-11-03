@@ -1,0 +1,2 @@
+UPDATE public.service_units SET name_en='Center for Career Placement & Alumni', name_ar='مركز التوظيف وشؤون الخريجين' WHERE code='CAREER';
+UPDATE public.appointment_slots SET location=NULL WHERE location IS NOT NULL;

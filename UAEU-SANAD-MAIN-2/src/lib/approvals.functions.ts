@@ -1,0 +1,3 @@
+import { apiFetch } from "@/lib/auth-token";
+export type ApprovalDecision={actionKey:string;status:"approved"|"declined"|"completed"|"failed";affectedService?:string|null|undefined;dataShared?:string|null|undefined;expectedOutcome?:string|null|undefined;responsibleUnit?:string|null|undefined;fee?:string|null|undefined;reversible?:"yes"|"no"|"conditional"|null|undefined;riskLevel?:"level_0"|"level_1"|"level_2"|"level_3"|undefined;dataScope?:string[]|undefined;receiptNumber?:string|null|undefined;approvalId?:string|null|undefined;language?:"en"|"ar"|undefined};
+export const recordApprovalDecisionFn=({data}:{data:ApprovalDecision})=>apiFetch<{id:string|null}>("/api/approvals/decision",{method:"POST",body:JSON.stringify(data)});

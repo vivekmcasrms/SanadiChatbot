@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Documents";
+    var docs = (List<IssuedDocument>)ViewBag.Documents;
+}
+<h1>Official documents</h1>
+
+<div class="card">
+    <h2 style="margin-top:0">To Whom It May Concern letter</h2>
+    <p class="muted">Fully automated and issued instantly as a verifiable PDF with a QR code. No waiting time and no approval step.</p>
+    <form method="post" action="/documents/issue">
+        @Html.AntiForgeryToken()
+        <div class="grid">
+            <div class="field">
+                <label for="language">Language</label>
+                <select id="language" name="language"><option value="en">English</option><option value="ar">العربية</option></select>
+            </div>
+            <div class="field">
+                <label for="purpose">Purpose</label>
+                <select id="purpose" name="purpose">
+                    <option value="general">General</option>
+                    <option value="bank">Bank</option>
+                    <option value="embassy">Embassy / visa</option>
+                    <option value="employer">Employer</option>
+                    <option value="scholarship">Scholarship</option>
+                    <option value="government">Government</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="grad">Include expected graduation date</label>
+                <input id="grad" name="includeGraduationDate" type="checkbox" value="true" />
+            </div>
+        </div>
+        <button type="submit">Issue my letter now</button>
+    </form>
+</div>
+
+<h2>Issued documents</h2>
+@if (!docs.Any())
+{
+    <div class="card muted">No documents issued yet.</div>
+}
+else
+{
+    <table>
+        <tr><th>Type</th><th>Purpose</th><th>Language</th><th>Issued</th><th>Verification</th><th></th></tr>
+        @foreach (var d in docs)
+        {
+            <tr>
+                <td>Enrolment letter</td>
+                <td>@d.Purpose</td>
+                <td>@d.Language.ToUpperInvariant()</td>
+                <td>@d.IssuedAt.ToString("dd MMM yyyy")</td>
+                <td><a href="/verify/@d.VerificationToken">@d.VerificationToken[..8]…</a></td>
+                <td><a class="btn" href="/documents/@d.Id/download">Download</a></td>
+            </tr>
+        }
+    </table>
+}

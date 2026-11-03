@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Governance dashboard";
+    var health = (SourceHealth)ViewBag.Knowledge;
+    var units = (List<ServiceUnit>)ViewBag.Units;
+}
+<h1>University-wide overview</h1>
+<div class="grid">
+    <div class="card"><div class="muted">All cases</div><div class="metric">@ViewBag.TotalCases</div></div>
+    <div class="card"><div class="muted">Open cases</div><div class="metric">@ViewBag.OpenCases</div></div>
+    <div class="card"><div class="muted">Documents issued</div><div class="metric">@ViewBag.Documents</div></div>
+    <div class="card"><div class="muted">Active knowledge sources</div><div class="metric">@health.ActiveSources</div><div class="muted">@health.IndexedChunks indexed passages</div></div>
+</div>
+
+<h2>Service units</h2>
+<table>
+    <tr><th>Code</th><th>Unit</th><th>Contact</th><th>Hours</th></tr>
+    @foreach (var u in units)
+    {
+        <tr><td>@u.Code</td><td>@u.NameEn</td><td>@u.ContactEmail</td><td>@u.ServiceHoursEn</td></tr>
+    }
+</table>

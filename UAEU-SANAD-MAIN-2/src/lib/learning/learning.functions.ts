@@ -1,0 +1,13 @@
+import { apiFetch } from "@/lib/auth-token";
+type Call<T>={data:T};
+type Any=Record<string,any>;
+const post=<T>(path:string,data:unknown)=>apiFetch<T>(`/api/learning/${path}`,{method:"POST",body:JSON.stringify(data??{})});
+export const getLearningCenterFn=(_?:Call<never>)=>apiFetch<Any>("/api/learning/center");
+export const decideLearningCandidateFn=({data}:Call<{candidateId:string;decision:"APPROVE"|"REJECT"|"DEFER";note?:string;edits?:{title?:string;triggerPhrases?:string[];targetUnitId?:string|null;targetDomain?:string|null;priority?:number}}>)=>post<{ok:boolean;activated?:boolean;alreadyDecided?:boolean}>("candidate/decision",data);
+export const toggleLearnedRuleFn=({data}:Call<{ruleId:string;active:boolean}>)=>post<{ok:boolean}>("rule/toggle",data);
+export const runLearningDetectionFn=(_?:Call<never>)=>post<Any>("detect",{});
+export const submitAssistantFeedbackFn=({data}:Call<{conversationId?:string|null;messageId?:string|null;helpful:boolean;reasonCode?:string|undefined;comment?:string|undefined;domain?:string|null;userText?:string|null}>)=>post<{ok:boolean;recorded:boolean}>("feedback",data);
+export const getRoutingImprovementsFn=(_?:Call<never>)=>apiFetch<Any>("/api/learning/routing");
+export const decideRoutingRuleFn=({data}:Call<{ruleId:string;action:"ACTIVATE"|"APPROVE"|"SHADOW"|"PAUSE"|"ROLLBACK"|"REJECT"|"EDIT";reason?:string;edits?:{ruleName?:string;triggerPhrases?:string[];targetDomain?:string|null;targetUnitId?:string|null;priority?:number;sourceLanguage?:"en"|"ar"|"both"}}>)=>post<{ok:boolean;status:string}>("routing/decision",data);
+export const runRoutingLearningFn=(_?:Call<never>)=>post<Any>("routing/run",{});
+export const updateLearningConfigFn=({data}:Call<{thresholdLow?:number;thresholdNormal?:number;thresholdHigh?:number;minHistoricalAccuracy?:number;minShadowSamples?:number;minShadowAccuracy?:number;autoActivationEnabled?:boolean;pauseConfidence?:number}>)=>post<{ok:boolean}>("config",data);

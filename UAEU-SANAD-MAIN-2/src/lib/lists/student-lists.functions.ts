@@ -1,0 +1,12 @@
+import { apiFetch } from "@/lib/auth-token";
+import type { PageResult } from "@/lib/list-query";
+import { allPages } from "./all-pages";
+export type MyCaseRow={id:string;case_number:string;title:string;status:string;urgency:string;case_type:string;created_at:string;last_activity_at:string|null;removable:boolean;meeting_at:string|null;meeting_mode:string|null;meeting_location:string|null};
+export type MySuggestionRow={id:string;reference_number:string;title:string;status:string;created_at:string;outcome_summary:string|null;implementation_target_date:string|null;latestUpdateEn:string|null;latestUpdateAr:string|null};
+export type MyAlertRow={id:string;title_en:string;title_ar:string;body_en:string|null;body_ar:string|null;severity:string;alert_type:string|null;action_url:string|null;deadline:string|null;is_read:boolean;generated_at:string;unit_en:string|null;unit_ar:string|null};
+type Base={page?:number|undefined;pageSize?:number|undefined;search?:string|undefined};
+const query=(data:Record<string,unknown>)=>{const p=new URLSearchParams();for(const[k,v]of Object.entries(data))if(v!==undefined&&v!==null&&v!=="")p.set(k,String(v));return p.toString();};
+export const listMyCasesFn=({data}:{data:Base&{tab?:"active"|"resolved"|"all"|undefined;type?:string|undefined;status?:string|undefined;sort?:"recent"|"oldest"|"activity"|undefined;range?:string|undefined}})=>apiFetch<PageResult<MyCaseRow>>(`/api/student-lists/cases?${query(data)}`);
+export const listAllMyActiveCases = () => allPages((page) => listMyCasesFn({ data: { tab: "active", page, pageSize: 100 } }));
+export const listMySuggestionsFn=({data}:{data:Base&{status?:string|undefined;sort?:"recent"|"oldest"|undefined}})=>apiFetch<PageResult<MySuggestionRow>>(`/api/student-lists/suggestions?${query(data)}`);
+export const listMyAlertsFn=({data}:{data:Base&{filter?:"all"|"unread"|"critical"|undefined;range?:string|undefined}})=>apiFetch<PageResult<MyAlertRow>>(`/api/student-lists/alerts?${query(data)}`);

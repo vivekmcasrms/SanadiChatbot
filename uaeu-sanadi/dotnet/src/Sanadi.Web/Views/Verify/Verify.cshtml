@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Document verification";
+    var doc = ViewBag.Document as IssuedDocument;
+}
+<div class="card" style="max-width:560px;margin:3rem auto;">
+    <h1>Document verification</h1>
+    @if (doc is null)
+    {
+        <div class="error">This document could not be verified. The verification reference is not valid.</div>
+    }
+    else
+    {
+        <p><span class="badge">Valid</span></p>
+        <table>
+            <tr><th>Document</th><td>Official enrolment letter (To Whom It May Concern)</td></tr>
+            <tr><th>Purpose</th><td>@doc.Purpose</td></tr>
+            <tr><th>Issued</th><td>@doc.IssuedAt.ToString("dd MMMM yyyy HH:mm 'UTC'")</td></tr>
+            <tr><th>Valid until</th><td>@(doc.ExpiresAt?.ToString("dd MMMM yyyy") ?? "—")</td></tr>
+            <tr><th>Reference</th><td>@doc.VerificationToken</td></tr>
+        </table>
+    }
+</div>

@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Needs your attention";
+    var cases = (List<ServiceCase>)ViewBag.Cases;
+    var bucket = ViewBag.Bucket as string ?? "attention";
+}
+<h1>@(bucket switch { "assigned" => "My assigned requests", "completed" => "Completed", _ => "Needs your attention" })</h1>
+
+@if (ViewBag.AttentionCount is not null)
+{
+    <div class="grid">
+        <div class="card"><div class="muted">Needs your attention</div><div class="metric">@ViewBag.AttentionCount</div></div>
+        <div class="card"><div class="muted">Assigned to me</div><div class="metric">@ViewBag.AssignedCount</div></div>
+        <div class="card"><div class="muted">Completed</div><div class="metric">@ViewBag.CompletedCount</div></div>
+    </div>
+}
+
+@if (!cases.Any())
+{
+    <div class="card muted">Nothing needs your action right now.</div>
+}
+else
+{
+    <table>
+        <tr><th>Reference</th><th>Type</th><th>Subject</th><th>Status</th><th>Due</th><th></th></tr>
+        @foreach (var c in cases)
+        {
+            <tr>
+                <td>@c.ReferenceNumber</td>
+                <td><span class="badge @(c.CaseType == "complaint" ? "danger" : c.CaseType == "suggestion" ? "warn" : "")">@c.CaseType</span></td>
+                <td>@c.Subject</td>
+                <td>@c.Status.Replace('_', ' ')</td>
+                <td>@(c.SlaDueAt?.ToString("dd MMM HH:mm") ?? "—")</td>
+                <td><a class="btn" href="/owner/case/@c.Id">Open</a></td>
+            </tr>
+        }
+    </table>
+}

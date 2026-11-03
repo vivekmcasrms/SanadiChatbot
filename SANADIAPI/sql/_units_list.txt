@@ -1,0 +1,57 @@
+﻿code|name_en
+----|-------
+ADV|Academic Advising
+ACCESS|Accessibility Support
+REG|Admission & Registration
+CEC|CEC
+CEDU|CEDU
+CAREER|Center for Career Placement & Alumni
+CES_UNIT|CES Unit
+CHANCELLOR_OFFICE|Chancellor Office
+CMHS|CMHS
+COB|COB
+COLLEGE_OF_CAVM|College of CAVM
+COLLEGE_OF_CHSS|College of CHSS
+COLLEGE_OF_ENGINEERING|College of Engineering
+COLLEGE_OF_GRADUATE_ST|College of Graduate studies
+COLLEGE_OF_LAW|College of Law
+COLLEGE_OF_SCIENCE|College Of Science
+COLLEGE_OF_SCIENCE_COS|College of Science COS
+DVCRA_RESEARCH_OFFICE|DVCRA - Research Office
+DVCSAE_OFFICE|DVCSAE Office
+DVCSE|DVCSE
+FACILITIES_MANAGEMENT_|Facilities Management Department
+FMD|FMD
+GENERAL_SERVICES|General Services
+GENERAL_SERVICES_DEPAR|General Services Department
+GENERAL_SUPERVISION_OF|General Supervision Office
+HD|HD
+HR|HR
+HR_SERVICES|HR Services
+IT_COLLEGE|IT college
+ITS|IT Support
+LIB|Library Services
+NATIONAL_FELLOW_GROUP|National Fellow Group
+NATIONAL_FELLOW_RECRUI|National Fellow Recruitment Group
+OES|Operations and Emergency Section
+PROCUREMENT|Procurement
+PROVOST|Provost
+PROVOST_OFFICE|Provost office
+SG|SG
+SAS|Student Academic Services
+COMP|Student Complaints Office
+FEES|Student Finance
+HAPPY|Student Happiness and Engagement
+HOUS|Student Housing
+HOUSING|Student Housing Services
+TENDER_PROCUREMENT|Tender & Procurement
+TRANS|Transportation Services
+UNIVERSITY_COLLEGE|University College
+UOD|UOD
+UOD_IC|UOD - IC
+UOD_LS|UOD - LS
+UOD_MARKETING|UOD - Marketing
+UOD_MC|UOD - MC
+UOD_MULTAQA|UOD - Multaqa
+UOD_UNIVERSITY_OUTREAC|UOD - University Outreach Department
+VC_OFFICE|VC Office

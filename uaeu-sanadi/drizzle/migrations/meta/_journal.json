@@ -1,0 +1,188 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792347722175,
+      "tag": "0000_hostel_booking_governed_workflow",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792348022834,
+      "tag": "0001_hostel_assignment_and_case_lifecycle_guards",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792348147605,
+      "tag": "0002_hostel_staff_scope_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792348169368,
+      "tag": "0003_hostel_demo_isolation_and_staff_retries",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792348495295,
+      "tag": "0004_hostel_demo_case_flag_compatibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792348980594,
+      "tag": "0005_programme_transfer_verified_assessment",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792349049296,
+      "tag": "0006_programme_transfer_confirmation_review",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792349236150,
+      "tag": "0007_transfer_verified_configuration",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792349367033,
+      "tag": "0008_transfer_case_scoped_review_safety",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1792349435151,
+      "tag": "0009_transfer_assignment_and_capacity_provenance",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1792349555817,
+      "tag": "0010_transfer_registration_ownership_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1792349588219,
+      "tag": "0011_service_availability_unambiguous_window_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1792349701647,
+      "tag": "0012_academic_programme_catalogue_provenance",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1792350900445,
+      "tag": "0013_hostel_direct_instant_booking",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1792351834859,
+      "tag": "0014_hostel_upgrade_to_single_room",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1793204916868,
+      "tag": "0015_arabic_language_style",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1793209336155,
+      "tag": "0016_data_classification_guards",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1793209952708,
+      "tag": "0017_authorization_hardening",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1793210338152,
+      "tag": "0018_intent_routing_logs",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1793210722136,
+      "tag": "0019_conversation_state_version",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1793211026522,
+      "tag": "0020_exception_component",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1793212401868,
+      "tag": "0021_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1793212642314,
+      "tag": "0022_document_file_cleanup_lifecycle",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1793212703745,
+      "tag": "0023_verification_independent_of_file_retention",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1793213434901,
+      "tag": "0024_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1793294606182,
+      "tag": "0025_notification_dismissal",
+      "breakpoints": true
+    }
+  ]
+}

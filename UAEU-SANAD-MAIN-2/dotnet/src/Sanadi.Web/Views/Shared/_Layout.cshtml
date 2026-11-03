@@ -1,0 +1,52 @@
+@{
+    var roles = User.Identity?.IsAuthenticated == true ? User.Roles() : new List<string>();
+    var isAdmin = roles.Contains(Roles.SystemAdmin);
+    var isStaff = roles.Any(r => Roles.Staff.Contains(r));
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · Sanadi — UAEU Student Services</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" href="/">Sanadi</a>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <nav>
+            @if (isAdmin)
+            {
+                <a href="/admin">Dashboard</a>
+                <a href="/admin/performance">Units &amp; performance</a>
+                <a href="/admin/knowledge">Knowledge Center</a>
+            }
+            else if (isStaff)
+            {
+                <a href="/owner">Needs your attention</a>
+                <a href="/owner/queue/assigned">My assigned requests</a>
+                <a href="/owner/queue/completed">Completed</a>
+            }
+            else
+            {
+                <a href="/">Overview</a>
+                <a href="/assistant">Assistant</a>
+                <a href="/requests">My requests</a>
+                <a href="/documents">Documents</a>
+            }
+        </nav>
+        <form method="post" action="/auth/signout" class="inline">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="link">Sign out</button>
+        </form>
+    }
+</header>
+<main>
+    @RenderBody()
+</main>
+<footer>United Arab Emirates University · Sanadi student services assistant</footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

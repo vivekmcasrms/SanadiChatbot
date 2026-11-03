@@ -1,0 +1,108 @@
+@{
+    ViewData["Title"] = "Knowledge Center";
+    var sources = (List<KnowledgeSource>)ViewBag.Sources;
+    var health = (SourceHealth)ViewBag.Health;
+}
+<h1>Knowledge Center</h1>
+<p><a class="btn" href="/admin/knowledge/test">Test Knowledge</a></p>
+
+<div class="grid">
+    <div class="card"><div class="muted">Active sources</div><div class="metric">@health.ActiveSources</div></div>
+    <div class="card"><div class="muted">Documents / web / APIs</div><div class="metric">@health.Documents / @health.WebSources / @health.Apis</div></div>
+    <div class="card"><div class="muted">Indexed passages</div><div class="metric">@health.IndexedChunks</div></div>
+    <div class="card"><div class="muted">Failed / needs review</div><div class="metric">@health.FailedSources / @health.NeedsReview</div></div>
+</div>
+
+<h2>Add documents</h2>
+<div class="card">
+    <form method="post" action="/admin/knowledge/documents" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="field">
+            <label for="files">PDF, DOCX or TXT files (you can select several)</label>
+            <input id="files" name="files" type="file" multiple required />
+        </div>
+        <div class="grid">
+            <div class="field"><label for="docDomain">Domain / unit</label><input id="docDomain" name="domain" type="text" /></div>
+            <div class="field"><label for="docLang">Language</label><select id="docLang" name="language"><option value="en">English</option><option value="ar">العربية</option></select></div>
+        </div>
+        <button type="submit">Upload &amp; index</button>
+    </form>
+</div>
+
+<h2>Add web sources</h2>
+<div class="card">
+    <form method="post" action="/admin/knowledge/urls">
+        @Html.AntiForgeryToken()
+        <div id="urlRows">
+            <div class="grid url-row">
+                <div class="field"><label>Title</label><input name="titles" type="text" /></div>
+                <div class="field"><label>URL</label><input name="urls" type="url" /></div>
+            </div>
+        </div>
+        <button type="button" class="secondary" onclick="addUrlRow()">Add another URL</button>
+        <div class="grid" style="margin-top:1rem">
+            <div class="field"><label>Crawl same domain</label><input name="crawlSameDomain" type="checkbox" value="true" /></div>
+            <div class="field"><label>Maximum pages</label><input name="maxPages" type="number" value="5" min="1" max="200" /></div>
+            <div class="field"><label>Language</label><select name="language"><option value="en">English</option><option value="ar">العربية</option></select></div>
+        </div>
+        <button type="submit">Fetch &amp; index</button>
+    </form>
+</div>
+
+<h2>Add API / data connections</h2>
+<div class="card">
+    <form method="post" action="/admin/knowledge/apis">
+        @Html.AntiForgeryToken()
+        <div id="apiRows">
+            <div class="grid api-row">
+                <div class="field"><label>Name</label><input name="names" type="text" /></div>
+                <div class="field"><label>Endpoint</label><input name="endpoints" type="url" /></div>
+                <div class="field"><label>Secret reference (name only)</label><input name="secretReferences" type="text" placeholder="LIBRARY_API_CLIENT_SECRET" /></div>
+                <div class="field"><label>Live query</label><input name="liveQuery" type="checkbox" value="true" /></div>
+            </div>
+        </div>
+        <button type="button" class="secondary" onclick="addApiRow()">Add another connection</button>
+        <div style="margin-top:1rem"><button type="submit">Save connections</button></div>
+        <p class="muted">Keys are never entered or displayed here — only the configuration name that points to the stored secret.</p>
+    </form>
+</div>
+
+<h2>All sources</h2>
+<table>
+    <tr><th>Name</th><th>Type</th><th>Domain</th><th>Language</th><th>Status</th><th>Chunks</th><th>Last indexed</th><th>Actions</th></tr>
+    @foreach (var s in sources)
+    {
+        <tr>
+            <td>@s.Title</td>
+            <td>@s.SourceType</td>
+            <td>@s.Domain</td>
+            <td>@s.Language.ToUpperInvariant()</td>
+            <td><span class="badge @(s.Status == KnowledgeStatus.Failed ? "danger" : s.Status == KnowledgeStatus.Active ? "" : "warn")">@s.Status</span></td>
+            <td>@s.IndexedChunks</td>
+            <td>@(s.LastIndexedAt?.ToString("dd MMM yyyy HH:mm") ?? "—")</td>
+            <td>
+                <a class="btn secondary" href="/admin/knowledge/@s.Id/chunks">View</a>
+                <form class="inline" method="post" action="/admin/knowledge/@s.Id/reprocess">@Html.AntiForgeryToken()<button class="secondary" type="submit">Reprocess</button></form>
+                <form class="inline" method="post" action="/admin/knowledge/@s.Id/enabled">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="enabled" value="@(s.Status == KnowledgeStatus.Active ? "false" : "true")" />
+                    <button class="secondary" type="submit">@(s.Status == KnowledgeStatus.Active ? "Disable" : "Enable")</button>
+                </form>
+                <form class="inline" method="post" action="/admin/knowledge/@s.Id/delete">@Html.AntiForgeryToken()<button class="secondary" type="submit">Delete</button></form>
+            </td>
+        </tr>
+    }
+</table>
+
+@section Scripts {
+<script>
+    function clone(containerId, selector) {
+        const container = document.getElementById(containerId);
+        const row = container.querySelector(selector).cloneNode(true);
+        row.querySelectorAll('input').forEach(i => { if (i.type === 'checkbox') i.checked = false; else i.value = ''; });
+        container.appendChild(row);
+    }
+    function addUrlRow() { clone('urlRows', '.url-row'); }
+    function addApiRow() { clone('apiRows', '.api-row'); }
+</script>
+}

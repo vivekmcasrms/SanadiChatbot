@@ -1,0 +1,52 @@
+@{
+    var c = ViewBag.Case as ServiceCase;
+    ViewData["Title"] = c?.ReferenceNumber ?? "Case";
+}
+@if (c is null)
+{
+    <div class="card">This case is not available.</div>
+}
+else
+{
+    <h1>@c.Subject</h1>
+    <p class="muted">@c.ReferenceNumber · <span class="badge">@c.CaseType</span> · @c.Unit?.NameEn</p>
+
+    <div class="card">@c.Description</div>
+
+    <h2>Conversation</h2>
+    @foreach (var m in c.Messages.OrderBy(m => m.CreatedAt))
+    {
+        <div class="card">
+            <div class="muted">@m.AuthorRole · @m.CreatedAt.ToString("dd MMM yyyy HH:mm") @(m.InternalOnly ? "· internal note" : "")</div>
+            <div>@m.Body</div>
+        </div>
+    }
+
+    <div class="card">
+        <form method="post" action="/owner/case/@c.Id/reply">
+            @Html.AntiForgeryToken()
+            <div class="field">
+                <label for="body">Reply to the student</label>
+                <textarea id="body" name="body" rows="4" required></textarea>
+            </div>
+            <label><input type="checkbox" name="internalOnly" value="true" /> Internal note only</label>
+            <div style="margin-top:0.8rem"><button type="submit">Send</button></div>
+        </form>
+    </div>
+
+    <div class="card">
+        <form method="post" action="/owner/case/@c.Id/status">
+            @Html.AntiForgeryToken()
+            <div class="field">
+                <label for="status">Update status</label>
+                <select id="status" name="status">
+                    <option value="@CaseStatus.InProgress">In progress</option>
+                    <option value="@CaseStatus.WaitingForStudent">Waiting for student</option>
+                    <option value="@CaseStatus.Resolved">Resolved</option>
+                    <option value="@CaseStatus.Closed">Closed</option>
+                </select>
+            </div>
+            <button type="submit" class="secondary">Save</button>
+        </form>
+    </div>
+}

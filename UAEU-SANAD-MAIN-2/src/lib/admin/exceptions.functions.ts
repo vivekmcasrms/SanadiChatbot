@@ -1,0 +1,11 @@
+import { apiFetch } from "@/lib/auth-token";
+import type { ExceptionCode } from "@/lib/exceptions/catalogue";
+export type ExceptionSummary={code:string;label:{en:string;ar:string};total:number;recovered:number;escalated:number};
+export type ExceptionRow={id:string;code:ExceptionCode|string;label:{en:string;ar:string};severity:string;recovered:boolean;escalated:boolean;recoveryAction:string|null;traceId:string|null;caseId:string|null;createdAt:string};
+export type ExceptionLogResult={rows:ExceptionRow[];summary:ExceptionSummary[];windowDays:number};
+export type ExceptionTestRow={id:string;scenario:string;label:{en:string;ar:string};code:string;recovered:boolean;escalated:boolean;recoveryAction:string|null;studentMessage:string|null;traceId:string|null;createdAt:string;resolvedAt:string|null};
+export type ExceptionEvidence={detected:number;recovered:number;escalated:number;recoveryRate:number;realIncidents:number;controlledTests:number;latestTests:ExceptionTestRow[];byCode:ExceptionSummary[]};
+export type Scenario="ambiguous_request"|"api_timeout"|"staff_unavailable"|"missing_knowledge";
+export const listExceptionEventsFn=({data}:{data:{days:number}})=>apiFetch<ExceptionLogResult>(`/api/exceptions/log?days=${data.days}`);
+export const getExceptionEvidenceFn=()=>apiFetch<ExceptionEvidence>("/api/exceptions/evidence");
+export const runExceptionTestFn=({data}:{data:{scenario:Scenario;language:"en"|"ar"}})=>apiFetch<{scenario:Scenario;label:{en:string;ar:string};code:string;detected:boolean;recovered:boolean;escalated:boolean;recoveryAction:string;studentMessage:string;traceId:string;pass:boolean;note:{en:string;ar:string}}>("/api/exceptions/test",{method:"POST",body:JSON.stringify(data)});

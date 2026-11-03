@@ -1,0 +1,2 @@
+ALTER TABLE public.academic_programs ADD COLUMN IF NOT EXISTS catalogue_details jsonb, ADD COLUMN IF NOT EXISTS catalogue_source_url text, ADD COLUMN IF NOT EXISTS catalogue_verified_at timestamptz;
+COMMENT ON COLUMN public.academic_programs.catalogue_details IS 'Official programme catalogue snapshot: overview, objectives, outcomes, degree requirements and alternative concentrations. Catalogue data is not transfer admission rules, verified equivalencies or seat capacity.';

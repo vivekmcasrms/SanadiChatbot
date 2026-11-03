@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Overview";
+    var s = (StudentSnapshot)ViewBag.Student;
+    var cases = (List<ServiceCase>)ViewBag.Cases;
+}
+<h1>Welcome@(string.IsNullOrEmpty(s.FullName) ? "" : ", " + s.FullName)</h1>
+
+@if (!s.HasProfile)
+{
+    <div class="card">No academic record is linked to this account yet.</div>
+}
+else
+{
+    <div class="grid">
+        <div class="card"><div class="muted">Programme</div><div>@s.Programme</div><div class="muted">@s.College</div></div>
+        <div class="card"><div class="muted">GPA</div><div class="metric">@(s.Gpa?.ToString("0.00") ?? "—")</div><div class="muted">@s.Standing</div></div>
+        <div class="card"><div class="muted">Completed credits</div><div class="metric">@s.CompletedCredits</div><div class="muted">of @s.TotalCredits</div></div>
+        <div class="card"><div class="muted">Open requests</div><div class="metric">@s.OpenCases</div></div>
+    </div>
+
+    @if (s.Holds.Any())
+    {
+        <h2>Active holds</h2>
+        <table>
+            <tr><th>Hold</th><th>What clears it</th><th>Blocks</th></tr>
+            @foreach (var h in s.Holds)
+            {
+                <tr>
+                    <td>@h.TitleEn</td>
+                    <td>@h.ResolutionEn</td>
+                    <td>
+                        @if (h.BlocksRegistration) { <span class="badge warn">Registration</span> }
+                        @if (h.BlocksGraduation) { <span class="badge danger">Graduation</span> }
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+}
+
+<h2>Recent requests</h2>
+@if (!cases.Any())
+{
+    <div class="card muted">You have no requests yet.</div>
+}
+else
+{
+    <table>
+        <tr><th>Reference</th><th>Subject</th><th>Type</th><th>Status</th><th>Created</th></tr>
+        @foreach (var c in cases.Take(10))
+        {
+            <tr>
+                <td>@c.ReferenceNumber</td>
+                <td>@c.Subject</td>
+                <td><span class="badge">@c.CaseType</span></td>
+                <td>@c.Status.Replace('_', ' ')</td>
+                <td>@c.CreatedAt.ToString("dd MMM yyyy")</td>
+            </tr>
+        }
+    </table>
+}

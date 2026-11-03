@@ -1,0 +1,5 @@
+import { apiFetch } from "@/lib/auth-token";
+export type ConcernKind="question"|"correction"|"objection"|"reopen";
+export type CaseOutcomeView={status:string;outcomeEn:string|null;outcomeAr:string|null;explanationEn:string|null;explanationAr:string|null;unitEn:string|null;unitAr:string|null;staffName:string|null;resolvedAt:string|null;nextStepEn:string|null;nextStepAr:string|null;concerns:{id:string;kind:ConcernKind;reason:string;createdAt:string;decision:string|null;decisionReason:string|null;reviewedAt:string|null;originalOutcomeEn:string|null;originalOutcomeAr:string|null}[]};
+export const getCaseOutcomeFn=({data}:{data:{caseId:string}})=>apiFetch<CaseOutcomeView|null>(`/api/case-transparency/${encodeURIComponent(data.caseId)}/outcome`);
+export const raiseOutcomeConcernFn=({data}:{data:{caseId:string;kind:ConcernKind;reason:string;lang:"en"|"ar"}})=>apiFetch<{ok:boolean;status:string}>(`/api/case-transparency/${encodeURIComponent(data.caseId)}/concerns`,{method:"POST",body:JSON.stringify({kind:data.kind,reason:data.reason,lang:data.lang})});

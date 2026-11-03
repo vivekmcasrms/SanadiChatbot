@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Test Knowledge";
+    var result = ViewBag.Result as TestKnowledgeResult;
+}
+<h1>Test Knowledge</h1>
+<p class="muted">This runs exactly the same retrieval pipeline the student assistant uses.</p>
+
+<div class="card">
+    <form method="get" action="/admin/knowledge/test">
+        <div class="field">
+            <label for="q">Question</label>
+            <input id="q" name="q" type="text" value="@ViewBag.Query" placeholder="What is the objective of the Student Housing Services policy?" />
+        </div>
+        <button type="submit">Run test</button>
+    </form>
+</div>
+
+@if (result is not null)
+{
+    <h2>Retrieved evidence</h2>
+    @if (!result.Passages.Any())
+    {
+        <div class="card">No approved source currently answers this question.</div>
+    }
+    else
+    {
+        foreach (var p in result.Passages)
+        {
+            <div class="card">
+                <div class="muted">
+                    @p.SourceTitle · @p.SourceType
+                    @(p.SectionTitle is null ? "" : " · section: " + p.SectionTitle)
+                    @(p.PageNumber is null ? "" : " · page " + p.PageNumber)
+                    · relevance @p.Score
+                </div>
+                @if (!string.IsNullOrEmpty(p.Url))
+                {
+                    <div class="muted">@p.Url</div>
+                }
+                <div style="white-space:pre-wrap">@p.Content</div>
+            </div>
+        }
+    }
+}

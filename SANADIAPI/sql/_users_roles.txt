@@ -1,0 +1,14 @@
+﻿email|roles
+-----|-----
+202101@uaeu.ac.ae|student
+202102@uaeu.ac.ae|student
+202103@uaeu.ac.ae|student
+202104@uaeu.ac.ae|student
+202105@uaeu.ac.ae|student
+202106@uaeu.ac.ae|student
+202107@uaeu.ac.ae|student
+202108@uaeu.ac.ae|student
+202109@uaeu.ac.ae|student
+202110@uaeu.ac.ae|student
+ahmed.it@staff.demo.local|service_officer,service_owner
+sys1@staff.demo.local|system_admin

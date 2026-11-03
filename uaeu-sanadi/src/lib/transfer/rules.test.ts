@@ -1,0 +1,22 @@
+import { describe, it, expect } from "vitest";
+import { evaluateTransfer, isTransferIntent, type TransferFacts } from "./rules";
+const valid: TransferFacts = { credits:24,gpa:3.10,previousTransfers:0,requirements:[{label:"Algebra",minimum:85,actual:90}],rulesVerified:true,serviceOpen:true,accepting:true,seats:1 };
+describe("programme transfer rules",()=>{
+  it("accepts 24 credits and GPA 3.10 with all verified checks",()=>expect(evaluateTransfer(valid).canSubmit).toBe(true));
+  it.each([12,36])("includes boundary %i",credits=>expect(evaluateTransfer({...valid,credits}).canSubmit).toBe(true));
+  it("rejects 11 credits",()=>expect(evaluateTransfer({...valid,credits:11}).failures).toContain("below_minimum_credits"));
+  it("rejects 37 credits",()=>expect(evaluateTransfer({...valid,credits:37}).failures).toContain("above_maximum_credits"));
+  it("rejects GPA 2.40 at 30 credits",()=>expect(evaluateTransfer({...valid,credits:30,gpa:2.40}).failures).toContain("gpa_below_minimum"));
+  it("includes GPA 2.50",()=>expect(evaluateTransfer({...valid,gpa:2.50}).canSubmit).toBe(true));
+  it("rejects an already-used transfer",()=>expect(evaluateTransfer({...valid,credits:30,gpa:3.20,previousTransfers:1}).failures).toContain("previous_transfer_exists"));
+  it("separates academic eligibility from zero capacity",()=>expect(evaluateTransfer({...valid,seats:0})).toMatchObject({academicallyEligible:true,canSubmit:false,operational:["no_available_seats"]}));
+  it("reports the exact unmet configurable requirement",()=>expect(evaluateTransfer({...valid,requirements:[{label:"Calculus",minimum:90,actual:89}]}).failures).toContain("Calculus:below_minimum"));
+  it("blocks missing history",()=>expect(evaluateTransfer({...valid,previousTransfers:null}).canSubmit).toBe(false));
+  it("blocks missing capacity",()=>expect(evaluateTransfer({...valid,seats:null}).canSubmit).toBe(false));
+  it("blocks closed service",()=>expect(evaluateTransfer({...valid,serviceOpen:false}).canSubmit).toBe(false));
+  it("blocks a programme not accepting transfers",()=>expect(evaluateTransfer({...valid,accepting:false}).canSubmit).toBe(false));
+  it("blocks missing verified rules",()=>expect(evaluateTransfer({...valid,rulesVerified:false}).canSubmit).toBe(false));
+  it.each(["Can I transfer to Computer Science?","I want to transfer from Engineering to Data Science.","أبغي أحول إلى كلية الهندسة"])("detects %s",text=>expect(isTransferIntent(text)).toBe(true));
+  it("does not route a money transfer to academic transfers",()=>expect(isTransferIntent("transfer money to my bank")).toBe(false));
+  it("recognises academic credit-impact questions",()=>expect(isTransferIntent("What happens to my completed courses if I transfer?")).toBe(true));
+});

@@ -1,0 +1,1438 @@
+{
+ "program": {
+  "code": "BSDSAI",
+  "program_id": "23022",
+  "title_en": "Bachelor of Science in Data Science and Artificial Intelligence",
+  "title_ar": "بكالوريوس العلوم في علم البيانات والذكاء الاصطناعي",
+  "total_credit_hours": 120,
+  "source": "https://www.uaeu.ac.ae/en/catalog/program-details.shtml?PROGRAM_ID=2887.2968.23022",
+  "study_plan": "https://www.uaeu.ac.ae/en/cit/pdf/cit_bsc_data_science_and_artificial_intelligence_study_plan.pdf",
+  "catalogue_version": "20260818_1537"
+ },
+ "areas": [
+  {
+   "area": "General Education (Req. Ch: 21)",
+   "cluster": "Theme 1: UAE National Identity",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "GEEM110",
+     "title": "Contemporary Emirati Studies",
+     "title_ar": "دراسات إماراتية معاصرة",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "General Education (Req. Ch: 21)",
+   "cluster": "Theme 2: Academic Language Proficiency",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "GEAE101",
+     "title": "Academic English for Humanities and STEM",
+     "title_ar": "اللغة الإنجليزية للعلوم و العلوم الإنسانية",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "General Education (Req. Ch: 21)",
+   "cluster": "Theme 4: Entrepreneurship",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "ITBP218",
+     "title": "Entrepreneurship and New Venture Creation in IT",
+     "title_ar": "ريادة الأعمال وإنشاء المشاريع الجديدة في مجال تكنولوجيا المعلومات",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "General Education (Req. Ch: 21)",
+   "cluster": "Theme 5: Sustainability",
+   "min_ch": "0",
+   "courses": [
+    {
+     "code": "GESU121",
+     "title": "Sustainability ",
+     "title_ar": "الاستدامة",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 6: Quantitative Reasoning and Critical Thinking",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "PHI180",
+     "title": "Critical Thinking",
+     "title_ar": "التفكير الناقد",
+     "ch": "3"
+    },
+    {
+     "code": "MATH120",
+     "title": "Contemporary Applications of Math",
+     "title_ar": "التطبيقات المعاصرة للرياضيات",
+     "ch": "3"
+    },
+    {
+     "code": "STAT101",
+     "title": "Statistics in the Modern World",
+     "title_ar": "الإحصاء في العالم الحديث",
+     "ch": "3"
+    },
+    {
+     "code": "ECON110",
+     "title": "Principles of Economics",
+     "title_ar": "مبادئ الاقتصاد",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 7: Humanities",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "GEZD110",
+     "title": "Zayed’s Legacy of Tolerance and Coexistence",
+     "title_ar": "إرث الشيخ زايد والتعايش السلمي في الإمارات",
+     "ch": "3"
+    },
+    {
+     "code": "GEIS100",
+     "title": "Islamic Culture",
+     "title_ar": "الثقافة الإسلامية",
+     "ch": "3"
+    },
+    {
+     "code": "GEIS101",
+     "title": "Biography of the Prophet \"Sira\"",
+     "title_ar": "السيرة النبوية",
+     "ch": "3"
+    },
+    {
+     "code": "HSR120",
+     "title": "Introduction to Heritage & Culture",
+     "title_ar": "مدخل إلى التراث والثقافة",
+     "ch": "3"
+    },
+    {
+     "code": "HSR130",
+     "title": "Introduction to Language & Communication",
+     "title_ar": "المدخل إلى اللغات والاتصال",
+     "ch": "3"
+    },
+    {
+     "code": "MSC200",
+     "title": "Introduction to Mass Media",
+     "title_ar": "مدخل إلى وسائل الاتصال",
+     "ch": "3"
+    },
+    {
+     "code": "TRS200",
+     "title": "Introduction to Translation",
+     "title_ar": "مدخل إلى الترجمة",
+     "ch": "3"
+    },
+    {
+     "code": "PHI101",
+     "title": "Introduction to Philosophy",
+     "title_ar": "مدخل إلى الفلسفة",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 8: Behavioral and Social Sciences",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "AGRB210",
+     "title": "Introduction to Agribusiness",
+     "title_ar": "مقدمة في إدارة الاعمال الزراعية",
+     "ch": "3"
+    },
+    {
+     "code": "CURR103",
+     "title": "Early Childhood Development & Learning",
+     "title_ar": "النمو والتعلم في الطفولة المبكرة",
+     "ch": "3"
+    },
+    {
+     "code": "GEO200",
+     "title": "World Regional Geography",
+     "title_ar": "الجغرافيا الإقليمية للعالم",
+     "ch": "3"
+    },
+    {
+     "code": "HSR140",
+     "title": "Introduction to Society & Behavior",
+     "title_ar": "المدخل إلى المجتمع والسلوك الإنساني",
+     "ch": "3"
+    },
+    {
+     "code": "HSR150",
+     "title": "Introduction to Government Policy & Urban Structures",
+     "title_ar": "مدخل إلى الحكومة والسياسات",
+     "ch": "3"
+    },
+    {
+     "code": "PHI226",
+     "title": "Human Rights Theory",
+     "title_ar": "نظرية حقوق الإنسان",
+     "ch": "3"
+    },
+    {
+     "code": "PSYC100",
+     "title": "Introduction to Psychology",
+     "title_ar": "مدخل إلى علم النفس",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 9: Natural Sciences",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "ARAG205",
+     "title": "Introduction to Fish and Animal Science",
+     "title_ar": "مقدمة فى المصايد البحرية والانتاج الحيوانى",
+     "ch": "3"
+    },
+    {
+     "code": "ARAG220",
+     "title": "Natural Resources",
+     "title_ar": "الموارد الطبيعية",
+     "ch": "3"
+    },
+    {
+     "code": "GEOL110",
+     "title": "Planet Earth",
+     "title_ar": "كوكب الأرض",
+     "ch": "3"
+    },
+    {
+     "code": "CHEM181",
+     "title": "Chemistry in the Modern World",
+     "title_ar": "الكيمياء في العالم الحديث",
+     "ch": "3"
+    },
+    {
+     "code": "PHYS100",
+     "title": "Astronomy",
+     "title_ar": "الفلك",
+     "ch": "3"
+    },
+    {
+     "code": "PHYS101",
+     "title": "Conceptual Physics",
+     "title_ar": "مفاهيم فيزيائية",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 10: Health and Wellness",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "FDSC250",
+     "title": "Contemporary Food Science & Nutrition",
+     "title_ar": "علوم الغذاء والتغذية المعاصرة",
+     "ch": "3"
+    },
+    {
+     "code": "GEHP111",
+     "title": "Happiness and Wellbeing",
+     "title_ar": "السعادة والرفاهية",
+     "ch": "3"
+    },
+    {
+     "code": "NUTR100",
+     "title": "Nutrition and Well-being",
+     "title_ar": "التغذية والرفاهية، أو التغذية و العافية",
+     "ch": "3"
+    },
+    {
+     "code": "PHED201",
+     "title": "Physical Fitness and Wellness",
+     "title_ar": "اللياقة البدنية والعافية",
+     "ch": "3"
+    },
+    {
+     "code": "PHED211",
+     "title": "Health and Movement",
+     "title_ar": "الحركة والصحة",
+     "ch": "3"
+    },
+    {
+     "code": "SLP101",
+     "title": "Language Development and Impairment",
+     "title_ar": "اللغة وضعف النمو اللغوي   تطور",
+     "ch": "3"
+    },
+    {
+     "code": "SPED101",
+     "title": "Education of Exceptional Children",
+     "title_ar": "تعليم الأطفال الاستثنائيين",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Students shall register 9 CH from the 6 following themes  (a maximum of 3 CH from each theme, except theme 11, where all 6 CHs should be taken for a particular language)",
+   "cluster": "Theme 11: Cultural Diversity (Registering in any of these courses (CHIN101, FCH101, KOR101, GER101, SPN101) should be followed by registering in the relevant complementary course (CHIN102, FCH102, GER102, KOR102, SPN102 respectively)",
+   "min_ch": "3",
+   "courses": [
+    {
+     "code": "CHIN101",
+     "title": "Chinese 1 for Beginners",
+     "title_ar": "اللغة الصينية 1 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "FCH101",
+     "title": "French 1 for Beginners",
+     "title_ar": "اللغة الفرنسية 1 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "GER101",
+     "title": "German 1 for Beginners",
+     "title_ar": "اللغة الألمانية 1 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "KOR101",
+     "title": "Korean 1 for Beginners",
+     "title_ar": "اللغة الكورية 1 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "SPN101",
+     "title": "Spanish 1 for Beginners",
+     "title_ar": "اللغة الاسبانية ١ للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "CHIN102",
+     "title": "Chinese 2 for Beginners",
+     "title_ar": "اللغة الصينية 2 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "FCH102",
+     "title": "French 2 for Beginners",
+     "title_ar": "اللغة الفرنسية ٢ للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "KOR102",
+     "title": "Korean 2 for Beginners",
+     "title_ar": "اللغة الكورية 2 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "GER102",
+     "title": "German 2 for Beginners",
+     "title_ar": "اللغة الألمانية 2 للمبتدئين",
+     "ch": "3"
+    },
+    {
+     "code": "SPN102",
+     "title": "Spanish 2 for Beginners",
+     "title_ar": "اللغة الاسبانية 2 للمبتدئين",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Major Requirements",
+   "cluster": "Required Courses",
+   "min_ch": "54",
+   "courses": [
+    {
+     "code": "CSBP270",
+     "title": "Responsible Artificial Intelligence",
+     "title_ar": "الذكاء الصناعي المسؤول",
+     "ch": "3"
+    },
+    {
+     "code": "CHEM111",
+     "title": "General Chemistry I",
+     "title_ar": "(كيمياء عامة  (1",
+     "ch": "3"
+    },
+    {
+     "code": "BIOC100",
+     "title": "Basic Biology I",
+     "title_ar": "أساسيات علوم الحياة 1",
+     "ch": "3"
+    },
+    {
+     "code": "PHYS105",
+     "title": "General Physics I",
+     "title_ar": "(1) فيزياء عامه",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP119",
+     "title": "Algorithms and Problem Solving",
+     "title_ar": "الخوارزميات و حل المشاكل",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP219",
+     "title": "Object Oriented Programming",
+     "title_ar": "البرمجة غرضية التوجه",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP323",
+     "title": "Data Structures and Algorithms",
+     "title_ar": "هياكل البيانات والخوارزميات",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP320",
+     "title": "Data Mining ",
+     "title_ar": "استخراج البيانات",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP301",
+     "title": "Artificial Intelligence",
+     "title_ar": "الذكاء الإصطناعي",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP411",
+     "title": "Machine Learning",
+     "title_ar": "برمجيات الآليات",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP224",
+     "title": "Introduction to Data Science",
+     "title_ar": "مقدمة في علم البيانات",
+     "ch": "3"
+    },
+    {
+     "code": "STAT210",
+     "title": "Probability and Statistics",
+     "title_ar": "الاحتمالات والإحصاء",
+     "ch": "3"
+    },
+    {
+     "code": "STAT240",
+     "title": "Data Exploration and Analysis",
+     "title_ar": "استكشاف وتحليل البيانات",
+     "ch": "3"
+    },
+    {
+     "code": "STAT470",
+     "title": "Introduction to Statistical Computing",
+     "title_ar": "مقدمة في الحوسبة الإحصائية",
+     "ch": "3"
+    },
+    {
+     "code": "MATH105",
+     "title": "Calculus I",
+     "title_ar": "(تفاضل و تكامل (1",
+     "ch": "3"
+    },
+    {
+     "code": "MATH110",
+     "title": "Calculus II",
+     "title_ar": "(تفاضل و تكامل (2",
+     "ch": "3"
+    },
+    {
+     "code": "MATH140",
+     "title": "Linear Algebra I",
+     "title_ar": "(الجبر الخطي (1",
+     "ch": "3"
+    },
+    {
+     "code": "MATH240",
+     "title": "Applied Linear Algebra ",
+     "title_ar": "الجبر الخطي التطبيقي",
+     "ch": "3"
+    },
+    {
+     "code": "MATH290",
+     "title": "Computational Mathematics ",
+     "title_ar": "الرياضيات الحسابية",
+     "ch": "3"
+    },
+    {
+     "code": "CENG202",
+     "title": "Discrete Mathematics",
+     "title_ar": "الرياضيات المتقطعة",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Internship",
+   "cluster": "Required Course",
+   "min_ch": "6",
+   "courses": [
+    {
+     "code": "CSBP495",
+     "title": "Internship",
+     "title_ar": "التدريب العملي الميداني",
+     "ch": "6"
+    }
+   ]
+  },
+  {
+   "area": "Advanced Computing Thinking - Compulsory Requirements",
+   "cluster": "Required Courses",
+   "min_ch": "15",
+   "courses": [
+    {
+     "code": "SWEB450",
+     "title": "Analysis of Algorithms",
+     "title_ar": "تحليل البرمجيات",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP340",
+     "title": "Database Systems",
+     "title_ar": "أنظمة قاعدة البيانات",
+     "ch": "3"
+    },
+    {
+     "code": "ITBP324",
+     "title": "Cloud Computing Fundamentals",
+     "title_ar": "أساسيات الحوسبة السحابية",
+     "ch": "3"
+    },
+    {
+     "code": "ITBP480",
+     "title": "Senior Graduation Project I",
+     "title_ar": "معرض الأعمال النهائية 1",
+     "ch": "3"
+    },
+    {
+     "code": "ITBP481",
+     "title": "Senior Graduation Project II",
+     "title_ar": "مشروع التخرج 2",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Specialization Electives",
+   "cluster": "Students should take three courses from the list below:",
+   "min_ch": "9",
+   "courses": [
+    {
+     "code": "CSBP441",
+     "title": "Applied Computer Vision",
+     "title_ar": "تطبيقات الرؤية الحاسوبية",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP475",
+     "title": "Advanced topics in Data Science",
+     "title_ar": "موضوعات متقدمة في علوم البيانات",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP477",
+     "title": "Natural Language Processing",
+     "title_ar": "معالجة اللغة الطبيعية",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP476",
+     "title": "Robotics and Intelligent Systems ",
+     "title_ar": "الروبوتات والأنظمة الذكية",
+     "ch": "3"
+    },
+    {
+     "code": "CSBP325",
+     "title": "Data Visualization",
+     "title_ar": "عرض مرئي للبيانات",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Supporting Requirements",
+   "cluster": "Group (1)",
+   "min_ch": "6",
+   "courses": [
+    {
+     "code": "MATH350",
+     "title": "Optimization Methods ",
+     "title_ar": "طرق التحسين",
+     "ch": "3"
+    },
+    {
+     "code": "ISEC411",
+     "title": "Privacy and Anonymity",
+     "title_ar": "الخصوصية والمجهولية",
+     "ch": "3"
+    }
+   ]
+  },
+  {
+   "area": "Supporting Requirements",
+   "cluster": "Group (2) Students should take three courses from the list below:",
+   "min_ch": "9",
+   "courses": [
+    {
+     "code": "MGMT201",
+     "title": "Fundamentals of Management and Organizational Behavior",
+     "title_ar": "أساسيات الإدارة والسلوك التنظيمي",
+     "ch": "3"
+    },
+    {
+     "code": "BANA200",
+     "title": "Managing with Analytics",
+     "title_ar": "إدارة التحليل",
+     "ch": "3"
+    },
+    {
+     "code": "MKTG200",
+     "title": "Principles of Marketing",
+     "title_ar": "مبادئ التسويق",
+     "ch": "3"
+    },
+    {
+     "code": "MKTG320",
+     "title": "Consumer Behavior",
+     "title_ar": "سلوك المستهلك",
+     "ch": "3"
+    },
+    {
+     "code": "PHI440",
+     "title": "Cognitive Science",
+     "title_ar": "علم المعرفة",
+     "ch": "3"
+    }
+   ]
+  }
+ ],
+ "courses": [
+  {
+   "code": "AGRB210",
+   "title_en": "Introduction to Agribusiness",
+   "title_ar": "مقدمة في إدارة الاعمال الزراعية",
+   "credit_hours": 3
+  },
+  {
+   "code": "ARAG205",
+   "title_en": "Introduction to Fish and Animal Science",
+   "title_ar": "مقدمة فى المصايد البحرية والانتاج الحيوانى",
+   "credit_hours": 3
+  },
+  {
+   "code": "ARAG220",
+   "title_en": "Natural Resources",
+   "title_ar": "الموارد الطبيعية",
+   "credit_hours": 3
+  },
+  {
+   "code": "BANA200",
+   "title_en": "Managing with Analytics",
+   "title_ar": "إدارة التحليل",
+   "credit_hours": 3
+  },
+  {
+   "code": "BIOC100",
+   "title_en": "Basic Biology I",
+   "title_ar": "أساسيات علوم الحياة 1",
+   "credit_hours": 3
+  },
+  {
+   "code": "CENG202",
+   "title_en": "Discrete Mathematics",
+   "title_ar": "الرياضيات المتقطعة",
+   "credit_hours": 3
+  },
+  {
+   "code": "CHEM111",
+   "title_en": "General Chemistry I",
+   "title_ar": "(كيمياء عامة  (1",
+   "credit_hours": 3
+  },
+  {
+   "code": "CHEM181",
+   "title_en": "Chemistry in the Modern World",
+   "title_ar": "الكيمياء في العالم الحديث",
+   "credit_hours": 3
+  },
+  {
+   "code": "CHIN101",
+   "title_en": "Chinese 1 for Beginners",
+   "title_ar": "اللغة الصينية 1 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "CHIN102",
+   "title_en": "Chinese 2 for Beginners",
+   "title_ar": "اللغة الصينية 2 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP119",
+   "title_en": "Algorithms and Problem Solving",
+   "title_ar": "الخوارزميات و حل المشاكل",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP219",
+   "title_en": "Object Oriented Programming",
+   "title_ar": "البرمجة غرضية التوجه",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP224",
+   "title_en": "Introduction to Data Science",
+   "title_ar": "مقدمة في علم البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP270",
+   "title_en": "Responsible Artificial Intelligence",
+   "title_ar": "الذكاء الصناعي المسؤول",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP301",
+   "title_en": "Artificial Intelligence",
+   "title_ar": "الذكاء الإصطناعي",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP319",
+   "title_en": "Data Structures",
+   "title_ar": "هياكل البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP320",
+   "title_en": "Data Mining",
+   "title_ar": "استخراج البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP323",
+   "title_en": "Data Structures and Algorithms",
+   "title_ar": "هياكل البيانات والخوارزميات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP325",
+   "title_en": "Data Visualization",
+   "title_ar": "عرض مرئي للبيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP340",
+   "title_en": "Database Systems",
+   "title_ar": "أنظمة قاعدة البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP411",
+   "title_en": "Machine Learning",
+   "title_ar": "برمجيات الآليات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP441",
+   "title_en": "Applied Computer Vision",
+   "title_ar": "تطبيقات الرؤية الحاسوبية",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP475",
+   "title_en": "Advanced topics in Data Science",
+   "title_ar": "موضوعات متقدمة في علوم البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP476",
+   "title_en": "Robotics and Intelligent Systems",
+   "title_ar": "الروبوتات والأنظمة الذكية",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP477",
+   "title_en": "Natural Language Processing",
+   "title_ar": "معالجة اللغة الطبيعية",
+   "credit_hours": 3
+  },
+  {
+   "code": "CSBP495",
+   "title_en": "Internship",
+   "title_ar": "التدريب العملي الميداني",
+   "credit_hours": 6
+  },
+  {
+   "code": "CURR103",
+   "title_en": "Early Childhood Development & Learning",
+   "title_ar": "النمو والتعلم في الطفولة المبكرة",
+   "credit_hours": 3
+  },
+  {
+   "code": "ECON110",
+   "title_en": "Principles of Economics",
+   "title_ar": "مبادئ الاقتصاد",
+   "credit_hours": 3
+  },
+  {
+   "code": "FCH101",
+   "title_en": "French 1 for Beginners",
+   "title_ar": "اللغة الفرنسية 1 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "FCH102",
+   "title_en": "French 2 for Beginners",
+   "title_ar": "اللغة الفرنسية ٢ للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "FDSC250",
+   "title_en": "Contemporary Food Science & Nutrition",
+   "title_ar": "علوم الغذاء والتغذية المعاصرة",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEAE101",
+   "title_en": "Academic English for Humanities and STEM",
+   "title_ar": "اللغة الإنجليزية للعلوم و العلوم الإنسانية",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEEM110",
+   "title_en": "Contemporary Emirati Studies",
+   "title_ar": "دراسات إماراتية معاصرة",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEHP111",
+   "title_en": "Happiness and Wellbeing",
+   "title_ar": "السعادة والرفاهية",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEIS100",
+   "title_en": "Islamic Culture",
+   "title_ar": "الثقافة الإسلامية",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEIS101",
+   "title_en": "Biography of the Prophet \"Sira\"",
+   "title_ar": "السيرة النبوية",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEO200",
+   "title_en": "World Regional Geography",
+   "title_ar": "الجغرافيا الإقليمية للعالم",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEOL110",
+   "title_en": "Planet Earth",
+   "title_ar": "كوكب الأرض",
+   "credit_hours": 3
+  },
+  {
+   "code": "GER101",
+   "title_en": "German 1 for Beginners",
+   "title_ar": "اللغة الألمانية 1 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "GER102",
+   "title_en": "German 2 for Beginners",
+   "title_ar": "اللغة الألمانية 2 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "GESU121",
+   "title_en": "Sustainability",
+   "title_ar": "الاستدامة",
+   "credit_hours": 3
+  },
+  {
+   "code": "GEZD110",
+   "title_en": "Zayed’s Legacy of Tolerance and Coexistence",
+   "title_ar": "إرث الشيخ زايد والتعايش السلمي في الإمارات",
+   "credit_hours": 3
+  },
+  {
+   "code": "HSR120",
+   "title_en": "Introduction to Heritage & Culture",
+   "title_ar": "مدخل إلى التراث والثقافة",
+   "credit_hours": 3
+  },
+  {
+   "code": "HSR130",
+   "title_en": "Introduction to Language & Communication",
+   "title_ar": "المدخل إلى اللغات والاتصال",
+   "credit_hours": 3
+  },
+  {
+   "code": "HSR140",
+   "title_en": "Introduction to Society & Behavior",
+   "title_ar": "المدخل إلى المجتمع والسلوك الإنساني",
+   "credit_hours": 3
+  },
+  {
+   "code": "HSR150",
+   "title_en": "Introduction to Government Policy & Urban Structures",
+   "title_ar": "مدخل إلى الحكومة والسياسات",
+   "credit_hours": 3
+  },
+  {
+   "code": "ISEC411",
+   "title_en": "Privacy and Anonymity",
+   "title_ar": "الخصوصية والمجهولية",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP218",
+   "title_en": "Entrepreneurship and New Venture Creation in IT",
+   "title_ar": "ريادة الأعمال وإنشاء المشاريع الجديدة في مجال تكنولوجيا المعلومات",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP280",
+   "title_en": "Information Technology Project Management Exhibition",
+   "title_ar": "معرض ادارة مشاريع تقنية المعلومات",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP301",
+   "title_en": "Security Principles & Practice",
+   "title_ar": "مبادئ وممارسات الأمن",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP324",
+   "title_en": "Cloud Computing Fundamentals",
+   "title_ar": "أساسيات الحوسبة السحابية",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP480",
+   "title_en": "Senior Graduation Project I",
+   "title_ar": "معرض الأعمال النهائية 1",
+   "credit_hours": 3
+  },
+  {
+   "code": "ITBP481",
+   "title_en": "Senior Graduation Project II",
+   "title_ar": "مشروع التخرج 2",
+   "credit_hours": 3
+  },
+  {
+   "code": "KOR101",
+   "title_en": "Korean 1 for Beginners",
+   "title_ar": "اللغة الكورية 1 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "KOR102",
+   "title_en": "Korean 2 for Beginners",
+   "title_ar": "اللغة الكورية 2 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH105",
+   "title_en": "Calculus I",
+   "title_ar": "(تفاضل و تكامل (1",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH110",
+   "title_en": "Calculus II",
+   "title_ar": "(تفاضل و تكامل (2",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH120",
+   "title_en": "Contemporary Applications of Math",
+   "title_ar": "التطبيقات المعاصرة للرياضيات",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH130",
+   "title_en": "Calculus I for Engineering",
+   "title_ar": "تفاضل وتكامل (1) للهندسة",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH140",
+   "title_en": "Linear Algebra I",
+   "title_ar": "(الجبر الخطي (1",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH240",
+   "title_en": "Applied Linear Algebra",
+   "title_ar": "الجبر الخطي التطبيقي",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH290",
+   "title_en": "Computational Mathematics",
+   "title_ar": "الرياضيات الحسابية",
+   "credit_hours": 3
+  },
+  {
+   "code": "MATH350",
+   "title_en": "Optimization Methods",
+   "title_ar": "طرق التحسين",
+   "credit_hours": 3
+  },
+  {
+   "code": "MGMT201",
+   "title_en": "Fundamentals of Management and Organizational Behavior",
+   "title_ar": "أساسيات الإدارة والسلوك التنظيمي",
+   "credit_hours": 3
+  },
+  {
+   "code": "MKTG200",
+   "title_en": "Principles of Marketing",
+   "title_ar": "مبادئ التسويق",
+   "credit_hours": 3
+  },
+  {
+   "code": "MKTG320",
+   "title_en": "Consumer Behavior",
+   "title_ar": "سلوك المستهلك",
+   "credit_hours": 3
+  },
+  {
+   "code": "MSC200",
+   "title_en": "Introduction to Mass Media",
+   "title_ar": "مدخل إلى وسائل الاتصال",
+   "credit_hours": 3
+  },
+  {
+   "code": "NUTR100",
+   "title_en": "Nutrition and Well-being",
+   "title_ar": "التغذية والرفاهية، أو التغذية و العافية",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHED201",
+   "title_en": "Physical Fitness and Wellness",
+   "title_ar": "اللياقة البدنية والعافية",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHED211",
+   "title_en": "Health and Movement",
+   "title_ar": "الحركة والصحة",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHI101",
+   "title_en": "Introduction to Philosophy",
+   "title_ar": "مدخل إلى الفلسفة",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHI180",
+   "title_en": "Critical Thinking",
+   "title_ar": "التفكير الناقد",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHI226",
+   "title_en": "Human Rights Theory",
+   "title_ar": "نظرية حقوق الإنسان",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHI440",
+   "title_en": "Cognitive Science",
+   "title_ar": "علم المعرفة",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHYS100",
+   "title_en": "Astronomy",
+   "title_ar": "الفلك",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHYS101",
+   "title_en": "Conceptual Physics",
+   "title_ar": "مفاهيم فيزيائية",
+   "credit_hours": 3
+  },
+  {
+   "code": "PHYS105",
+   "title_en": "General Physics I",
+   "title_ar": "(1) فيزياء عامه",
+   "credit_hours": 3
+  },
+  {
+   "code": "PSYC100",
+   "title_en": "Introduction to Psychology",
+   "title_ar": "مدخل إلى علم النفس",
+   "credit_hours": 3
+  },
+  {
+   "code": "SLP101",
+   "title_en": "Language Development and Impairment",
+   "title_ar": "اللغة وضعف النمو اللغوي   تطور",
+   "credit_hours": 3
+  },
+  {
+   "code": "SPED101",
+   "title_en": "Education of Exceptional Children",
+   "title_ar": "تعليم الأطفال الاستثنائيين",
+   "credit_hours": 3
+  },
+  {
+   "code": "SPN101",
+   "title_en": "Spanish 1 for Beginners",
+   "title_ar": "اللغة الاسبانية ١ للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "SPN102",
+   "title_en": "Spanish 2 for Beginners",
+   "title_ar": "اللغة الاسبانية 2 للمبتدئين",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT101",
+   "title_en": "Statistics in the Modern World",
+   "title_ar": "الإحصاء في العالم الحديث",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT202",
+   "title_en": "Business Statistics II",
+   "title_ar": "إحصاء الأعمال 2",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT210",
+   "title_en": "Probability and Statistics",
+   "title_ar": "الاحتمالات والإحصاء",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT230",
+   "title_en": "Principles of Probability",
+   "title_ar": "مبادئ الاحتمال",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT240",
+   "title_en": "Data Exploration and Analysis",
+   "title_ar": "استكشاف وتحليل البيانات",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT360",
+   "title_en": "Applied Regression",
+   "title_ar": "الانحدار التطبيقي",
+   "credit_hours": 3
+  },
+  {
+   "code": "STAT470",
+   "title_en": "Introduction to Statistical Computing",
+   "title_ar": "مقدمة في الحوسبة الإحصائية",
+   "credit_hours": 3
+  },
+  {
+   "code": "SWEB450",
+   "title_en": "Analysis of Algorithms",
+   "title_ar": "تحليل البرمجيات",
+   "credit_hours": 3
+  },
+  {
+   "code": "TRS200",
+   "title_en": "Introduction to Translation",
+   "title_ar": "مدخل إلى الترجمة",
+   "credit_hours": 3
+  }
+ ],
+ "prerequisites": [
+  {
+   "course": "CENG202",
+   "prerequisite": "MATH105",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CHIN102",
+   "prerequisite": "CHIN101",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "CSBP219",
+   "prerequisite": "CSBP119",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP224",
+   "prerequisite": "CSBP119",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP270",
+   "prerequisite": "CSBP224",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP301",
+   "prerequisite": "CSBP323",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "CSBP301",
+   "prerequisite": "CSBP319",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP320",
+   "prerequisite": "STAT210",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP323",
+   "prerequisite": "CSBP219",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP325",
+   "prerequisite": "CSBP224",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "CSBP340",
+   "prerequisite": "CSBP319",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP340",
+   "prerequisite": "CSBP323",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "CSBP411",
+   "prerequisite": "CSBP301",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP441",
+   "prerequisite": "CSBP301",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP475",
+   "prerequisite": "CSBP301",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "CSBP476",
+   "prerequisite": "CSBP301",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "CSBP477",
+   "prerequisite": "CSBP301",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "FCH102",
+   "prerequisite": "FCH101",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "GER102",
+   "prerequisite": "GER101",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "ISEC411",
+   "prerequisite": "CSBP320",
+   "min_grade": "D",
+   "condition": "and"
+  },
+  {
+   "course": "ISEC411",
+   "prerequisite": "ITBP301",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "ITBP218",
+   "prerequisite": "ITBP280",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "ITBP324",
+   "prerequisite": "CSBP219",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "ITBP480",
+   "prerequisite": "STAT210",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "ITBP481",
+   "prerequisite": "ITBP480",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "KOR102",
+   "prerequisite": "KOR101",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MATH110",
+   "prerequisite": "MATH105",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MATH240",
+   "prerequisite": "MATH140",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MATH290",
+   "prerequisite": "MATH110",
+   "min_grade": "D",
+   "condition": "and"
+  },
+  {
+   "course": "MATH290",
+   "prerequisite": "MATH140",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MATH350",
+   "prerequisite": "MATH110",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MKTG200",
+   "prerequisite": "MGMT201",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "MKTG320",
+   "prerequisite": "MKTG200",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "SPN102",
+   "prerequisite": "SPN101",
+   "min_grade": null,
+   "condition": null
+  },
+  {
+   "course": "STAT210",
+   "prerequisite": "MATH110",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "STAT210",
+   "prerequisite": "MATH130",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "STAT240",
+   "prerequisite": "STAT202",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "STAT240",
+   "prerequisite": "STAT210",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "STAT470",
+   "prerequisite": "STAT230",
+   "min_grade": "D",
+   "condition": "and"
+  },
+  {
+   "course": "STAT470",
+   "prerequisite": "STAT240",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "STAT470",
+   "prerequisite": "STAT360",
+   "min_grade": "D",
+   "condition": null
+  },
+  {
+   "course": "SWEB450",
+   "prerequisite": "CSBP319",
+   "min_grade": "D",
+   "condition": "or"
+  },
+  {
+   "course": "SWEB450",
+   "prerequisite": "CSBP323",
+   "min_grade": "D",
+   "condition": null
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Units & performance";
+    var rows = (IEnumerable<dynamic>)ViewBag.Rows;
+}
+<h1>Units &amp; performance</h1>
+<table>
+    <tr><th>Unit</th><th>Active</th><th>Completed</th><th>Within SLA</th></tr>
+    @foreach (var r in rows)
+    {
+        <tr>
+            <td>@r.Unit</td>
+            <td>@r.Active</td>
+            <td>@r.Completed</td>
+            <td>@(r.SlaPercent is null ? "No completed cases" : $"{r.SlaPercent}%")</td>
+        </tr>
+    }
+</table>

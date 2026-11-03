@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "My requests";
+    var cases = (List<ServiceCase>)ViewBag.Cases;
+}
+<h1>My requests</h1>
+@if (!cases.Any())
+{
+    <div class="card muted">Nothing here yet. Ask Sanadi to open a request for you.</div>
+}
+else
+{
+    <table>
+        <tr><th>Reference</th><th>Subject</th><th>Type</th><th>Status</th><th>Response due</th></tr>
+        @foreach (var c in cases)
+        {
+            <tr>
+                <td>@c.ReferenceNumber</td>
+                <td>@c.Subject</td>
+                <td><span class="badge">@c.CaseType</span></td>
+                <td>@c.Status.Replace('_', ' ')</td>
+                <td>@(c.SlaDueAt?.ToString("dd MMM yyyy HH:mm") ?? "—")</td>
+            </tr>
+        }
+    </table>
+}

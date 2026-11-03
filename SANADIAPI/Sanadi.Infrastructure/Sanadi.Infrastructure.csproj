@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sanadi.Application\Sanadi.Application.csproj" />
+    <ProjectReference Include="..\Sanadi.Domain\Sanadi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Dapper" Version="2.1.89" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <!-- SqlClient requires Pkcs; use the patched .NET 10 release in the application. -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.13" />
+    <PackageReference Include="QRCoder" Version="1.8.1" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+    <PackageReference Include="SkiaSharp" Version="4.153.1" />
+    <PackageReference Include="Topten.RichTextKit" Version="0.6.170" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.23.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Documents\Assets\uaeu-logo.jpg" LogicalName="Sanadi.Letter.uaeu-logo.jpg" />
+    <EmbeddedResource Include="Documents\Assets\amiri-regular.ttf" LogicalName="Sanadi.Letter.amiri-regular.ttf" />
+    <EmbeddedResource Include="Documents\Assets\amiri-bold.ttf" LogicalName="Sanadi.Letter.amiri-bold.ttf" />
+    <EmbeddedResource Include="Documents\Assets\Lato-Regular.ttf" LogicalName="Sanadi.Letter.Lato-Regular.ttf" />
+    <None Update="Documents\Assets\Lato-OFL.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

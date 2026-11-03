@@ -1,0 +1,30 @@
+# Build and IDE output
+**/bin/
+**/obj/
+.vs/
+artifacts/
+out/
+**/*.user
+**/*.suo
+
+# Runtime state and logs
+**/App_Data/logs/
+**/App_Data/storage/
+*.log
+*.log.*
+
+# Local/production secrets
+**/appsettings.json
+**/appsettings.Production.json
+!**/appsettings.example.json
+**/*.pfx
+**/*.p12
+**/*.pem
+**/*.key
+
+# Local databases and backups
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.bak
+

@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Extracted content";
+    var chunks = (List<KnowledgeChunk>)ViewBag.Chunks;
+}
+<h1>Extracted content</h1>
+<p class="muted">@chunks.Count indexed passages. Each heading stays attached to the text beneath it.</p>
+@foreach (var c in chunks)
+{
+    <div class="card">
+        <div class="muted">Chunk @c.ChunkIndex · page @(c.PageNumber?.ToString() ?? "—") · section: @(c.SectionTitle ?? "—") · @(string.IsNullOrEmpty(c.Embedding) ? "lexical only" : "embedded")</div>
+        <div style="white-space:pre-wrap">@c.Content</div>
+    </div>
+}

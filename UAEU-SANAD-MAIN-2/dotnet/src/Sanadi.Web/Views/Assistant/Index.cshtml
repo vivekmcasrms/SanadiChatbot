@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = "Assistant";
+}
+<h1>Ask Sanadi</h1>
+<div class="card">
+    <div id="thread"></div>
+    <div id="action" style="margin-top:1rem"></div>
+    <form class="composer" id="composer">
+        <input id="message" type="text" placeholder="Ask about your record, a policy, or request a letter…" required />
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+@section Scripts {
+<script>
+    let conversationId = null;
+    const thread = document.getElementById('thread');
+    const actionBox = document.getElementById('action');
+
+    function bubble(role, text) {
+        const el = document.createElement('div');
+        el.className = 'bubble ' + role;
+        el.textContent = text;
+        thread.appendChild(el);
+        el.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        return el;
+    }
+
+    function renderAnswer(el, data) {
+        // One stable bubble: the text only ever grows, it never blanks out.
+        el.textContent = data.answer;
+        if (data.citations && data.citations.length) {
+            const c = document.createElement('div');
+            c.className = 'citations';
+            c.textContent = 'Sources: ' + data.citations
+                .map(x => x.sectionTitle ? `${x.sourceTitle} — ${x.sectionTitle}` : x.sourceTitle)
+                .join(' · ');
+            el.appendChild(c);
+        }
+        actionBox.innerHTML = '';
+        (data.proposedActions || []).forEach(a => {
+            const btn = document.createElement('button');
+            btn.textContent = a.labelEn;
+            btn.onclick = () => confirmAction(a);
+            actionBox.appendChild(btn);
+        });
+    }
+
+    async function confirmAction(action) {
+        actionBox.innerHTML = '';
+        const el = bubble('assistant', 'Working on it…');
+        const res = await fetch('/api/assistant/execute', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ toolName: action.toolName || action.key, args: action.args || {}, conversationId })
+        });
+        const data = await res.json();
+        renderAnswer(el, data);
+        if (data.receipt && data.receipt.trackingUrl) {
+            const link = document.createElement('a');
+            link.href = data.receipt.trackingUrl;
+            link.textContent = 'Open';
+            link.className = 'btn';
+            actionBox.appendChild(link);
+        }
+    }
+
+    document.getElementById('composer').addEventListener('submit', async e => {
+        e.preventDefault();
+        const input = document.getElementById('message');
+        const text = input.value.trim();
+        if (!text) return;
+        input.value = '';
+        bubble('user', text);
+        const el = bubble('assistant', 'Sanadi is thinking…');
+        try {
+            const res = await fetch('/api/assistant/ask', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text, conversationId })
+            });
+            const data = await res.json();
+            conversationId = data.conversationId || conversationId;
+            renderAnswer(el, data);
+        } catch {
+            el.textContent = 'Sanadi could not reply just now. Please try again.';
+        }
+    });
+</script>
+}

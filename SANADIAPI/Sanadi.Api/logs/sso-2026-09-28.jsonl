@@ -1,0 +1,2 @@
+{"timestamp":"2026-09-28T10:08:57.6341081+00:00","level":"Information","message":"SSO_START TraceId=0HNOT903LAVT6:00000001 Provider=https://idmt.uaeu.ac.ae/as/authorization.oauth2 BrowserBound=true"}
+{"timestamp":"2026-09-28T10:15:35.3357212+00:00","level":"Information","message":"AUTH_SESSION_CHECK TraceId=0HNOT903LAVT7:00000001 AccessCookiePresent=False RefreshCookiePresent=False Authenticated=False"}

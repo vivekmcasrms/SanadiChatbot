@@ -1,0 +1,67 @@
+# Repository-local tooling and archives
+.validation/
+*.zip
+*.7z
+*.rar
+
+# Secrets and machine-specific environment files
+**/.env
+**/.env.*
+!**/.env.example
+**/appsettings.json
+**/appsettings.Production.json
+!**/appsettings.example.json
+**/*.user
+**/*.suo
+**/*.pfx
+**/*.p12
+**/*.pem
+**/*.key
+**/secrets.json
+
+# JavaScript dependencies and generated output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.output/
+**/.nitro/
+**/.vinxi/
+**/.tanstack/
+**/.wrangler/
+**/.vite/
+**/coverage/
+**/test-results/
+**/playwright-report/
+
+# .NET and IDE generated output
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/*
+!**/.vscode/extensions.json
+**/.idea/
+**/artifacts/
+**/out/
+**/App_Data/logs/
+**/App_Data/storage/
+
+# Logs, caches, and operating-system files
+**/*.log
+**/*.log.*
+**/*.tmp
+**/*.cache
+**/.DS_Store
+**/Thumbs.db
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Local databases, backups, and exported data
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/*.bak
+**/storage-export/
+**/*-export.sql
+

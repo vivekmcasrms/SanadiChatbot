@@ -1,0 +1,399 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system definition.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ *
+ * The :root and .dark blocks define the actual color values using oklch.
+ * All colors MUST use oklch format.
+ *
+ * To add a new semantic color:
+ * 1. Add the variable to :root (light value) and .dark (dark value)
+ * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-sans);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.22 0.02 20);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.02 25);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.02 25);
+  /* UAEU official red from 2025 logo: #D3202E / rgb(211, 32, 46) */
+  --primary: oklch(0.558 0.21 24.46);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --secondary: oklch(0.965 0.008 20);
+  --secondary-foreground: oklch(0.34 0.1 18);
+  --muted: oklch(0.968 0.005 20);
+  --muted-foreground: oklch(0.5 0.02 25);
+  --accent: oklch(0.945 0.02 24);
+  --accent-foreground: oklch(0.36 0.11 24);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.99 0.005 85);
+  --success: oklch(0.55 0.11 155);
+  --success-foreground: oklch(0.99 0.005 85);
+  --warning: oklch(0.72 0.14 70);
+  --warning-foreground: oklch(0.25 0.04 60);
+  --info: oklch(0.45 0.11 240);
+  --info-foreground: oklch(0.99 0.005 240);
+  --surface: oklch(0.982 0.005 20);
+  --border: oklch(0.912 0.008 20);
+  --input: oklch(0.912 0.008 20);
+  --ring: oklch(0.558 0.21 24.46);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.982 0.005 20);
+  --sidebar-foreground: oklch(0.22 0.02 20);
+  --sidebar-primary: oklch(0.558 0.21 24.46);
+  --sidebar-primary-foreground: oklch(0.99 0.005 85);
+  --sidebar-accent: oklch(0.945 0.02 24);
+  --sidebar-accent-foreground: oklch(0.36 0.11 24);
+  --sidebar-border: oklch(0.912 0.008 20);
+  --sidebar-ring: oklch(0.558 0.21 24.46);
+  --gradient-hero: linear-gradient(135deg, oklch(0.558 0.21 24.46) 0%, oklch(0.42 0.18 24) 60%, oklch(0.32 0.12 24) 100%);
+  --shadow-card: 0 1px 2px oklch(0.24 0.02 25 / 6%), 0 8px 24px oklch(0.24 0.02 25 / 6%);
+  --font-sans: "Aptos Display", "Aptos", "Outfit", "Cairo", system-ui, sans-serif;
+  --font-arabic: "Aptos Display", "Cairo", "Outfit", system-ui, sans-serif;
+}
+
+.dark {
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.558 0.21 24.46);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.558 0.21 24.46);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.558 0.21 24.46);
+  --sidebar-primary-foreground: oklch(0.99 0.005 85);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* UAEU brand stripe — sits on top of every header / screen. */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: var(--primary);
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  /* Long unbroken strings (IDs, tokens, URLs, emails) must never widen a page. */
+  p,
+  li,
+  dd,
+  dt,
+  h1,
+  h2,
+  h3,
+  h4,
+  span,
+  td,
+  th {
+    overflow-wrap: anywhere;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  /* Touch devices: keep interactive controls comfortably tappable. */
+  @media (pointer: coarse) {
+    button,
+    [role="button"],
+    [role="tab"],
+    summary {
+      min-height: 2.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+      font-size: max(1rem, 0.875rem);
+    }
+  }
+}
+
+
+@utility hero-gradient {
+  background-image: var(--gradient-hero);
+}
+
+@utility card-shadow {
+  box-shadow: var(--shadow-card);
+}
+
+/* ---------------------------------------------------------------
+ * Sanadi avatar presence animations.
+ * Subtle by design: breathing idle, ring while listening, soft glow
+ * while thinking, gentle motion while responding. Direction-agnostic
+ * (transform-only), so RTL layouts are unaffected.
+ * --------------------------------------------------------------- */
+
+@keyframes sanadi-breathe {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.022) translateY(-1px); }
+}
+
+@keyframes sanadi-attend {
+  0%, 100% { transform: scale(1) translateY(0) rotate(0deg); }
+  25% { transform: scale(1.03) translateY(-1.5px) rotate(-0.6deg); }
+  75% { transform: scale(1.015) translateY(0.5px) rotate(0.6deg); }
+}
+
+@keyframes sanadi-ring-pulse {
+  0% { transform: scale(1); opacity: 0.55; }
+  70% { transform: scale(1.35); opacity: 0; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+@keyframes sanadi-glow {
+  0%, 100% { opacity: 0.25; transform: scale(1.02); }
+  50% { opacity: 0.6; transform: scale(1.12); }
+}
+
+.sanadi-avatar {
+  isolation: isolate;
+}
+
+.sanadi-avatar-img {
+  will-change: transform;
+  transition: box-shadow 0.3s ease;
+}
+
+.sanadi-avatar-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Idle: barely-there breathing. */
+.sanadi-avatar[data-state="idle"] .sanadi-avatar-img {
+  animation: sanadi-breathe 6s ease-in-out infinite;
+}
+
+/* Listening: audio-reactive ring, no facial/speaking cue. */
+.sanadi-avatar[data-state="listening"] .sanadi-avatar-img {
+  transform: scale(calc(1 + var(--sanadi-level, 0) * 0.05));
+  transition: transform 90ms linear;
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--primary) 45%, transparent);
+}
+
+.sanadi-avatar[data-state="listening"] .sanadi-avatar-ring {
+  border: 2px solid color-mix(in oklch, var(--primary) 55%, transparent);
+  animation: sanadi-ring-pulse 1.6s ease-out infinite;
+}
+
+/* Thinking: soft ambient glow, no spinner. */
+.sanadi-avatar[data-state="thinking"] .sanadi-avatar-img {
+  animation: sanadi-breathe 3.2s ease-in-out infinite;
+}
+
+.sanadi-avatar[data-state="thinking"] .sanadi-avatar-ring {
+  background: radial-gradient(circle, color-mix(in oklch, var(--primary) 40%, transparent) 0%, transparent 70%);
+  animation: sanadi-glow 2.4s ease-in-out infinite;
+}
+
+/* Responding / speaking: a touch more presence. */
+.sanadi-avatar[data-state="responding"] .sanadi-avatar-img,
+.sanadi-avatar[data-state="speaking"] .sanadi-avatar-img {
+  animation: sanadi-attend 3s ease-in-out infinite;
+}
+
+.sanadi-avatar[data-state="responding"] .sanadi-avatar-ring,
+.sanadi-avatar[data-state="speaking"] .sanadi-avatar-ring {
+  border: 1.5px solid color-mix(in oklch, var(--primary) 50%, transparent);
+  animation: sanadi-glow 1.8s ease-in-out infinite;
+}
+
+.sanadi-avatar[data-state="success"] .sanadi-avatar-ring {
+  border: 1.5px solid color-mix(in oklch, var(--success) 60%, transparent);
+}
+
+.sanadi-avatar[data-state="error"] .sanadi-avatar-ring {
+  border: 1.5px solid color-mix(in oklch, var(--destructive) 60%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sanadi-avatar .sanadi-avatar-img,
+  .sanadi-avatar .sanadi-avatar-ring {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* Keep a static state indicator so meaning is preserved. */
+  .sanadi-avatar[data-state="listening"] .sanadi-avatar-ring,
+  .sanadi-avatar[data-state="thinking"] .sanadi-avatar-ring,
+  .sanadi-avatar[data-state="responding"] .sanadi-avatar-ring,
+  .sanadi-avatar[data-state="speaking"] .sanadi-avatar-ring {
+    opacity: 0.6;
+  }
+}
+
+/* Accessibility baseline: a visible focus ring on every keyboard-focused
+   control, and comfortable 44px touch targets in navigation chrome and
+   list controls on touch devices. */
+:focus-visible {
+  /* Wins over component-level `focus-visible:outline-none` so keyboard users
+     always see where they are. */
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px;
+}
+
+/* Radix menus move :focus to items on pointer hover. Suppress the red
+   outline there — highlight is already handled via focus:bg-accent. */
+[role="menu"]:focus,
+[role="menu"]:focus-visible,
+[role="menuitem"]:focus,
+[role="menuitem"]:focus-visible,
+[role="menuitemcheckbox"]:focus,
+[role="menuitemcheckbox"]:focus-visible,
+[role="menuitemradio"]:focus,
+[role="menuitemradio"]:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Chat composer input: no red focus ring around the text field. */
+.composer-input:focus,
+.composer-input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+@media (pointer: coarse) {
+  header a,
+  header button,
+  nav a,
+  nav button,
+  aside a,
+  aside button,
+  [data-touch-target] {
+    min-height: 44px;
+  }
+
+  /* Widen the tap area of toggles without changing their visual size. */
+  [role="switch"] {
+    position: relative;
+  }
+
+  [role="switch"]::after {
+    content: "";
+    position: absolute;
+    inset: -4px -6px;
+  }
+}
